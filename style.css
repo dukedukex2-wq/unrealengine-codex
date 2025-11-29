@@ -1,0 +1,1177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Making use of CSS Variables */
+:root {
+    --bg-color: #ffffff;
+    --black-color: #000000;
+    --text-color: #0f172a;
+    --main-color: #6b7280;
+    --other-color: #334155;
+    --big-font: 4.4rem;
+    --h2-font: 2.2rem;
+    --p-font: 1rem;
+}
+html {
+    scroll-behavior: smooth !important;
+}
+body {
+    background: #0A0B10;
+    color: var(--bg-color);
+}
+.navbar {
+  background: #101014;
+    /* border-bottom: 1px solid #333; */
+}
+.navbar.sticky {
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(21, 21, 22, 0.57);
+}
+.epic-logo img {
+    width: 100%;
+    height: auto;
+    transition: all 0.225s ease;
+}
+.epic-logo:hover img {
+    filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%) contrast(85%);
+}
+.epic-icon {
+    color: var(--bg-color);
+}
+.unreal-logo-icon {   
+    transition: filter 0.45s ease;
+}
+.unreal-logo-icon:hover img {
+    filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%) contrast(85%);
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.toggler-icon {
+    background: var(--bg-color);
+    width: 24px;
+    height: 2px;
+    margin: 4px auto;
+    transition: all 0.5s ease;
+    display: block;
+    border-radius: 5px;
+}
+.navbar-toggler .line-1 {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler .line-2{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .line-3 {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+/* To make it look like menu icon again use collapsed class */
+.navbar-toggler.collapsed .line-1 {
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .line-2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .line-3 {
+    transform: rotate(0);
+}
+.nav-link  {
+    color: var(--bg-color);
+}
+/* This is the epic games logo as the first path */
+.epic-icon {
+    color: var(--bg-color);
+}
+.epic-logo:hover .epic-icon {
+    color: #C3C3C4;
+} 
+.epic-logo.dropdown.show .epic-icon {
+    color: #C3C3C4;
+} 
+.epic-icon {
+    display: inline-block;
+    transform-origin: center;
+    transition: transform 0.125s ease;
+}
+/* The navbar arrow */
+.nav-arrow {
+    color: var(--bg-color);
+}
+.nav-item:hover .nav-arrow {
+    color: #C3C3C4;
+}
+/* I am also keeping the hover when its on mobile view */
+.nav-item.dropdown.show .nav-arrow {
+    color: #C3C3C4;
+}
+.epic-logo.dropdown:hover .epic-icon {
+    transform: rotate(180deg);
+}
+.epic-logo.dropdown.show .epic-icon {
+    transform: rotate(180deg);
+}
+
+/* The color for the dropdown that is showing */
+.dropdown-menu {
+    background: linear-gradient(180deg, rgba(28, 28, 30, 0.95), rgba(15, 15, 16, 0.95));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.dropdown-item  {
+    padding-left: 10px;
+    transition: all 0.14s ease;
+}  
+.dropdown-item:hover {
+    background: #47474A;
+}
+/* Smooth rotation */
+.nav-down-arrow {
+    display: inline-block;
+    transition: transform 0.125s ease;
+    transform-origin: center;
+}
+/*  Rotate when hovered over the entire dropdown link */
+.nav-item.dropdown:hover .nav-down-arrow {
+    transform: rotate(180deg);
+}
+/*  Also rotate when dropdown is opened (Bootstrap adds .show class) */
+.nav-item.dropdown.show .nav-down-arrow {
+    transform: rotate(180deg);
+}
+@media (min-width: 576px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }  
+}
+.search-container {
+    position: relative;
+    width: 100%;
+}
+.search {
+    width: 100%;
+    height: 40px; /* fits nicely in navbars */
+    background: #1D1C20;
+    font-size: 14px;
+    padding-right: 1rem;
+    min-width: 140px;
+}
+.search:focus{
+    outline: 2px solid var(--bg-color);
+}
+/* Icon styles */
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 47%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #7D7C7F;
+    transition: 0.45s ease;
+}
+.input-icon svg {
+    width: 20px;
+    height: 20px;
+    color: #7D7C7F;
+}
+.input-icon svg:hover{
+    color: var(--bg-color);
+    outline: none;
+}
+/* For the placeholder */
+.search::placeholder {
+    color: #7D7C7F;
+    font-size: 13px;
+}
+/*  Responsive: expands on smaller screens */
+@media (max-width: 1200px) {
+    .search-container {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .search-container {
+        max-width: 100%;
+        margin: 0 1rem;
+    }
+    .search {
+        min-width: 120px;
+    }
+    .max698-stack {
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        gap: 20px !important;
+    }
+    .max698-big {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .max698-big img {
+        width: 100% !important;
+        height: 500px !important; 
+        object-fit: cover !important;
+    }
+    .max698-big .card-body {
+        height: auto !important;
+    }
+    .max1295-w-70 {
+        width: 100% !important;
+        height: auto !important;
+        flex: 1 1 100% !important;
+    }
+    .max1295-w-70 .card-body {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+    .max1295-w-70 .second-card {
+        position: static !important;
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+    }
+    .sample-card-container {
+        gap: 0.75rem;
+        padding: 0 0.5rem;
+    }
+    
+    .sample-card-container .card img {
+        height: 200px !important;
+    }
+}    
+/* This is for the locale icon styles */
+.locale-world-icon .locale-icon {
+    color: var(--bg-color);
+    font-weight: 100;
+    transition: all 0.25s ease;
+}
+.locale-world-icon:hover .locale-icon  {
+    color: #C3C3C4;
+}
+.unreal_signin_btn {
+    background: #ffffff26;
+    transition: all 0.15s ease;
+    font-weight: 500;
+}
+.unreal_signin_btn:hover {
+    background: #646366;
+} 
+.download_btn {
+    background: #27BAFF;
+    transition: all 0.15s ease;
+    font-weight: 500;
+}
+.download_btn:hover {
+    background: #72D3FF;
+}
+
+/* Media queries starts here */
+/* The more content wont display now but from 3000px upwards */
+@media(max-width: 3000px) {
+    .more_content {
+        display: none;
+    }
+}
+@media (max-width: 1582px) {
+    .connect_content {
+        display:none;
+    }
+    .fab_content {
+        display: none;
+    }
+}
+@media(max-width: 1582px) {
+    .more_content {
+        display: block;
+    }
+}
+
+@media(max-width: 1486px) {
+    .learning_content {
+        display: none;
+    }
+}
+
+@media(max-width: 1278px) {
+    .documentation_content {
+        display: none;
+    }
+    .licensing-flex-container {
+        flex-direction: column !important;
+    }
+    
+    /* Remove line breaks from paragraphs */
+    .licensing-flex-box1 p br,
+    .licensing-flex-box2 p br {
+        display: none;
+    }
+    
+    /* Make boxes full width */
+    .licensing-flex-box1,
+    .licensing-flex-box2 {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width: 1262px) {
+    .forums_content {
+        display: none;
+    }
+}
+@media(max-width: 1186px) {
+    .news_content {
+        display: none;
+    }
+}
+@media(max-width: 1151px) {
+    .news_content{
+        display: block;
+    }
+    .forums_content {
+        display: block;
+    }
+    .documentation_content {
+        display: block;
+    }
+}
+@media (max-width: 1138px) {
+      .documentation_content {
+        display: none;
+    }
+}
+@media(max-width: 878px) {
+    .forums_content {
+        display: none;
+    }
+}
+@media(max-width: 575px){
+    .unreal-logo-icon {
+        display: none;
+    }.responsive-started {
+        width: 100%;
+    }
+    .responsive-started .card {
+        display: flex;
+    }
+    .sample-card-container {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    .sample-card-container .card img {
+        height: 240px !important;
+    }
+    .unreal-footer-logo.d-none {
+        display: block !important;
+    }
+}
+/* At 1399px learning went and entered more content */
+.dropend .dropdown-menu {
+    display: none !important;
+}
+.dropend:hover .dropdown-menu {
+    display: block !important;
+} 
+.search-con {
+  position: relative;
+  --size-button: 35px;
+  color: #7D7C7F;
+  display: none;
+}
+.search-con:hover {
+  color: var(--bg-color);
+}
+@media(max-width: 946px) {
+    .search {
+        display: none;
+    }
+    .input-icon {
+        display: none;
+    }
+    .search-con  {
+        display: block;
+    }
+}
+@media(max-width: 944px) {
+    .forums_content {
+        display: none;
+    }
+}
+@media(max-width: 880px) {
+    .news_content {
+        display: none;
+    }
+}
+@media(max-width: 824px) {
+    .uses_content {
+        display: none;
+    }
+}
+@media(max-width: 768px) {
+    .overview_content, .more_content {
+        display: none;
+    }
+}
+.search-con .input {
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 13px;
+  border: none;
+  color: var(--bg-color); /* The placeholder color when typing */
+  outline: none;
+  width: var(--size-button);
+  transition: all 0.3s ease;
+  background: transparent;
+  border-radius: 50px; /* Border radius from the width */
+  cursor: pointer;
+}
+.input::placeholder {
+   color:  #7D7C7F;
+}
+/* When I click the search icon, its width increase */
+.input:focus, .input:not(:invalid) {
+  width: 220px; /* Width to increase it to */
+  background: #1D1C20;
+  border: 1px solid #333;
+}
+
+.input:focus + .icon, .input:not(:invalid) + .icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+/* The icon styles itself */
+.search-con .icon {
+  position: absolute;
+  width: var(--size-button);
+  height: var(--size-button);
+  top: 0;
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
+}
+.search-con .icon svg {
+  width: 100%;
+  height: 100%;
+}
+/* Showing all nav links inside collapsed menu (md, sm, xs) */
+@media (max-width: 767px) {
+    .overview_content, .uses_content, .news_content, .forums_content, .documentation_content, .learning_content,
+     .connect_content, .fab_content {
+        display: block !important;
+    }
+    br {
+        display: none;
+    }
+    .more_content  {
+        display: none !important;
+    }
+    .navbar-collapse {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .epic-logo {
+    display: block !important;
+    position: relative;
+    z-index: 10000;
+   } 
+  .epic-logo .dropdown-menu {
+    display: none;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: #101014 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 80px 30px 100px 30px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    z-index: 9999 !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    transform: none !important;
+   }
+  .epic-logo.show .dropdown-menu, .epic-logo .dropdown-menu.show {
+    display: block !important;
+   } 
+  .epic-logo .dropdown-menu::before {
+    content: "Epic Games";
+    display: block;
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 50px;
+    line-height: 1;
+   } 
+  .epic-logo .dropdown-menu .vr {
+    display: none !important;
+   }
+  .epic-logo .dropdown-menu .row {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 !important;
+    margin: 0 !important;
+   }
+  .epic-logo .dropdown-menu .col-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+   }
+  .epic-logo .dropdown-menu .second-row {
+    margin-top: 0 !important;
+   }
+  .epic-logo .dropdown-menu .dropdown-header {
+    color: #ffffff !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin: 40px 0 20px 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+   }
+  .epic-logo .dropdown-menu .first-row .dropdown-header:first-of-type {
+    margin-top: 0 !important;
+   }
+  .epic-logo .dropdown-menu .dropdown-item {
+    display: flex !important;
+    align-items: center !important;
+    padding: 16px 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+   }
+  .epic-logo .dropdown-menu .dropdown-item:hover {
+    background: transparent !important;
+    opacity: 0.7;
+   } 
+  .epic-logo .dropdown-menu .dropdown-item img, .epic-logo .dropdown-menu .dropdown-item svg {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    margin-right: 16px !important;
+    filter: brightness(0) invert(1) !important;
+   }
+  .epic-logo .dropdown-menu .dropdown-item span {
+    font-size: 18px !important;
+    color: #ffffff !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+   }
+  .epic-logo .dropdown-menu .dropdown-divider {
+    display: none !important;
+   } 
+  .epic-logo .dropdown-menu li {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+   }
+  body:has(.epic-logo.show) {
+    overflow: hidden !important;
+   }
+  .epic-logo .dropdown-menu * {
+    box-sizing: border-box;
+   }
+}
+.home-container {
+    padding-top: 150px;
+}
+.home-bg-gradient {
+    position: relative;
+    background: linear-gradient( to right,
+        #0A0A0C 0%,     
+        #0D161F 30%,
+        #311D3C 60%,
+        #341528 80%,
+        #0F0F13 100%
+    );
+    overflow: hidden;
+}
+.home-bg-gradient::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%; 
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 11, 15, 0) 0%,     
+        rgba(10, 11, 15, 0.7) 70%, 
+        #0A0B0F 100%                
+    ); 
+}
+@media(max-width: 1399px) {
+    .home-container {
+        padding-top: 130px;
+    }
+   
+}
+.home-btn {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.home-text p {
+    font-size: 0.95rem;
+}
+.getunreal-btn {
+    background: #27BAFF;
+}
+.getunreal-btn:hover {
+    background: #72D3FF;
+}
+.learnabout-btn {
+    background: transparent;
+}
+.learnabout-btn:hover {
+    background: #404044;
+}
+@media(max-width: 690px) {
+    .home-btn {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .home-container {
+        padding-top: 120px;
+    }
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+    .home-text p {
+        font-size: 0.85rem;
+    }
+}
+@media(max-width: 1199px) {
+    .home-logo {
+        display: none;
+    }
+}
+.news-btn {
+    background: transparent;
+}
+.news-btn:hover {
+    background: #404044;
+} 
+
+/* Cards stay side-by-side and stretch until 918px */
+@media (min-width: 918px) {
+    .news .row > .col-sm-6 {
+        flex: 1 1 0 !important;
+        max-width: none !important;
+    }
+}
+@media (max-width: 917px) {
+    .news .row > .col-sm-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+.news .card {
+    background: #1C1C20;
+    transition: all 0.125s ease;
+}
+.news .card:hover {
+    background: #28282C;
+}
+/* Image wrapper overflow */
+.news .card .d-flex.align-items-center {
+    overflow: hidden;
+}
+/* Smooth image scale */
+.news .card img {
+    transition: transform 0.6s ease-out;
+    transform: scale(1);
+}
+.news .card:hover img {
+    transform: scale(1.1);
+}
+.video-container {
+  width: 53vw;
+  height: 53vh;
+  overflow: hidden;
+  position: relative;
+  right: 50.9%;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.home-text {
+    z-index: 2;
+    position: relative;
+}
+@media (max-width: 1200px) {
+  .video-container {
+    width: 53vw;
+    height: 53vh;
+    overflow: hidden;
+    position: relative;
+    right: 60%;
+  }
+}
+@media (max-width: 1199.9px) {
+  .video-container {
+    width: 100%;
+    height: auto; /* height follows the video */
+    right: 0;
+  }
+  .video-container video {
+    width: 100%;
+    height: auto;  /* keeps aspect ratio */
+    object-fit: cover;
+  }
+}
+.feature-btn {
+    background: #27BAFF;
+}
+.feature-btn:hover {
+    background: #72D3FF;
+}
+.feature .feature-img {
+    overflow: hidden;
+    -webkit-transition: all 50ms ease;
+    transition: transform 50ms ease;
+}
+.feature .feature-img img {
+    display: block;
+    width: 100%;
+    transition: all 0.325s ease;
+}
+.feature:hover .feature-img img {
+    transform: scale(1.1);
+}
+@media (max-width: 1399px) {
+    .game-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .game-container .cards img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 1151px) {
+    .game-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+    .game-container .cards {
+        width: 100%;
+    }
+    .game-container .cards img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 691px) {
+    .game-container {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .game-container .cards {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .game-container .cards img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+.spinner {
+  --size: 30px;
+  --first-block-clr: #5B4547;
+  --second-block-clr: #633B50;
+  --clr: #111;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: spin 2s linear infinite;
+}
+.spinner::after,
+.spinner::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  top: 50%;
+  left: 50%;
+  background: var(--first-block-clr);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 2s linear infinite, up 2s infinite;
+}
+.spinner::after {
+  background: var(--second-block-clr);
+  animation: orbit 2s linear infinite, down 2s infinite;
+}
+@keyframes orbit {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes down {
+  0%, 100% {
+    transform: none;
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%);
+    filter: blur(10px);
+  }
+  75% {
+    transform: translateY(100%);
+  }
+}
+@keyframes up {
+  0%, 100% {
+    transform: none;
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%) translateY(-100%);
+    filter: blur(10px);
+  }
+  75% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.started-link {
+    transition: all 0.24s ease;
+    border: .4px solid #444448;
+}
+.started-link:hover {
+    border: .4px solid #999;
+}
+.firstcard-link {
+    color: #26BCFF;
+    transition: all 0.24s ease;
+}
+.firstcard-link:hover {
+    color: #61CDFF;
+}
+.tutorials-card-container .card {
+    background: #242428;
+    transition: all 0.125s ease;
+}
+.tutorials-card-container .card:hover {
+    background: #28282C;
+}
+.sample-card-container .card {
+    background: #242428;
+    transition: all 0.125s ease;
+}
+.sample-card-container .card:hover {
+    background: #28282C;
+}
+.learn-row .card {
+    background: #1C1C20;
+    transition: all 0.125s ease;
+    border: .4px solid #444448;
+}
+.learn-row .card:hover {
+    background: #28282C;
+} 
+@media (max-width: 1295px) {
+    .max1295-flex-wrap  {
+        flex-wrap: wrap !important;
+    }
+    .max1295-w425 {
+        flex: 1 1 30%; 
+        max-width: 30%;
+    }
+    .max1295-order-last {
+        order: 5 !important;
+    }
+    .max1295-w-70 {
+        width: 100% !important;
+        flex: 0 0 90% !important;
+        height: 175px !important; /* This is to increase the height of the 4th box when its at 1295px */
+    }
+    .max1295-w-70 .second-card {
+        margin-top: auto;
+    }
+    .max1295-w-70 .first-card {
+        flex: 1;
+    }
+    /* Position button on the right */
+    .max1295-w-70 .second-card {
+        margin-left: auto;
+        position: relative;
+        bottom: 90px;
+    }
+    .documentation-hide-text {
+        display: none;
+    }
+    .documentation-show-text {
+        display: block;
+    }
+}
+/* For the scrolling in the started section */
+@media (max-width: 992px) {
+    .started-flex {
+        overflow-x: scroll;
+        flex-wrap: nowrap !important;
+        position: relative;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .started-flex::-webkit-scrollbar {
+        display: none;
+    } 
+    .started-flex li {
+        flex-shrink: 0;
+    }
+    .sample-card-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .sample-card-container .card {
+        width: 100%!important;
+        height: auto !important;
+        max-width: 100% !important;
+    }
+    
+    .sample-card-container .card img {
+        width: 100% !important;
+        height: 256px !important;
+    }
+    
+    .sample-card-container .card-body {
+        height: auto !important;
+    }
+}
+.lists-group {
+    background: #1C1C20;
+    border: 1.2px solid #27272B;
+    border-bottom: 0;
+    transition: all 0.25s ease;
+} 
+.lists-group:hover {
+    background: #28282C;
+} 
+.list-user {
+    background: #3E3E41;
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 1439px) {
+    .learn-row {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .learn-card {
+        width: 100% !important;
+        height: 170px !important;
+    }
+    .learn-card .card-body {
+        padding: 1.25rem 1rem !important;
+    }
+    .learn-card p {
+        display: inline !important;
+        font-size: 12px !important;
+    }
+    .learn-card h6 {
+        font-size: 17px !important;
+    }
+    .learn-card p br {
+        display: none;
+    }
+}
+@media (max-width: 1006px) {
+    .learn-row {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .learn-card {
+        width: 100% !important;
+        height: 120px !important;
+        min-height: 180px;
+    }
+    .learn-card .card-body {
+        padding: 1.5rem 1.3rem !important;
+    }
+    .lists-group {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1rem !important;
+    }
+    .lists-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .list-stats {
+        order: 2;
+    }
+    .list-user-info {
+        order: 1;
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .learn-row {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .learn-card {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 170px;
+    }
+    .learn-card .card-body {
+        padding: 1rem !important;
+    }
+    .learn-card p {
+        font-size: 20px;
+    }
+    .lists-group {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    .lists-group > div:last-child {
+        width: auto !important;
+    }
+    .list-user-info, .list-share {
+        display: none !important;
+        visibility: hidden; /* I am screen readers to read this but we won't see it, though its in d-none */
+    }
+    .list-stats {
+        flex-direction: column !important;
+        align-items: flex-end !important;
+    }
+}
+.licensing-span-text {
+    color: #26BCFF;
+}
+.licensing-span-text:hover {
+    color: #72D3FF;
+}
+.licensing-cta-box {
+    background: #1C1C20;
+    transition: all 0.25s ease;
+    border: 1px solid #27272B;
+}
+.list-styled {
+    list-style-type: disc;
+}
+.learning-cta-btn1 {
+    color: #26BCFF;
+    transition: all 0.25s ease;
+    padding: 10px 16px;
+}
+.learning-cta-btn1:hover {
+    background: #404044;
+    color: #26BCFF;
+}
+.learning-cta-btn2 {
+    color: #26BCFF;
+    transition: all 0.25s ease;
+    padding: 10px 16px;
+}
+.learning-cta-btn2:hover {
+    background: #404044;
+    color: #26BCFF;
+}
+.licensing-flex-box1 {
+    background: #1C1C20;
+    border: 1px solid #27272B;
+}
+.licensing-flex-box2 {
+    background: #1C1C20;
+    border: 1px solid #27272B;
+}
+.licensing-readmore-container {
+    background: #1C1C20;
+}
+.licensing-readmore-container:hover {
+    background: #404044;
+}
+.learning-cta-btn {
+    background: #27BAFF;
+    padding: 10px 16px;
+}
+.learning-cta-btn:hover {
+    background: #72D3FF;
+}
+@media screen and (max-width: 501px) {
+    .learning-cta-btn {
+        padding: 6px 8px;
+    }
+    .learning-cta-btn1 {
+        padding: 6px 8px;
+    }
+    .learning-cta-btn2 {
+        padding: 6px 8px;
+    }
+}
+@media  screen and (max-width: 719px) {
+    .unreal-footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem;
+    }
+    .footer-logo {
+        margin-bottom: 0 !important;
+    }
+    .footer-icons-con {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }  
+}
+.footer-icon {
+    color: #AEAEB0;
+    transition: all 0.1s ease;
+}
+.footer-icon:hover {
+    color: var(--bg-color);
+}
+.footer-link a {
+    color: #B8B6B7;
+    transition: all 0.23s ease;
+}
+.footer-link a:hover {
+    color: var(--bg-color);
+} 

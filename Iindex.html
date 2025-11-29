@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" rel="text/css" href="style.css">
+        <title>The most powerful real-time 3D creation tool - Unreal Engine</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="shortcut icon" href="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrq3wmn07o5xiqxc9fk" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="description" content="This is the Unreal Engine official site which contains real time 3D creation tool. It is free for everyone to play their favorite video games">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <!-- Header section -->
+                <header class="sticky">
+                    <nav class="navbar navbar-expand-md py-1 ps-1 pe-1 fixed-top" data-bs-theme="dark" role="navigation" aria-label="Main navigation"> <!-- table-responsive -->
+                            <div class="container-fluid">
+                                <!-- This is the epic games logo as the first path -->
+                                <div class="epic-logo dropdown dropend position-relative" class="me-auto" tabindex="0"> 
+                                    <a href="#" class="text-decoration-none" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/aChpm2RFQ3k8uQWWVwgM" alt="Epic-games logo" style="width: 27px; height: 27px;" title="Epic Games" >
+                                        <i class="epic-icon ri-arrow-down-s-line fw-lighter fs-6 fst-normal pe-3"></i>
+                                    </a> 
+                                    <ul class="dropdown-menu mt-0 rounded-4 border border-1 border-secondary-subtle" style="width: 500px; min-width: inset;" role="list" aria-label="Epicgames dropdown">
+                                        <div class="vr position-absolute top-0 h-100" style="left: 47.6%;"></div>
+                                        <div class="row py-3">
+                                            <!-- The left one -->
+                                            <div class="col-6 first-row">
+                                                <div class="dropdown-header text-white mb-2 ms-2 fw-bolder fs-6" role="menu" aria-labelledby="Play">Play</div>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.fortnite.com/?lang=en-US" class="dropdown-item mb-1 pt-2 pb-2 rounded-3"> 
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrr3wmp07o53dbxkm7q" alt="fortnite img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/>
+                                                        <span class="dropdown-left fw-light text-capitalize text-white ms-2" style="font-size: 11px;">Fortnite</span>
+                                                    </a>
+                                                </li>
+
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.rocketleague.com/?lang=en/" class="dropdown-item text-capitalize mb-2 mt-2 text-white pt-2 pb-2 rounded-3" style="font-size: 11px;">
+                                                        <img class="img-fluid" src="https://img.icons8.com/ink/48/rocket.png" alt="Rocket league img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-left fw-light text-capitalize text-white ms-2" style="font-size: 11px;">Rocket league</span>
+                                                    </a>
+                                                </li>
+                                                
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://fallguys.com/?lang=en-US" class="dropdown-item text-capitalize mb-4 mt-2 text-white pt-2 pb-2 rounded-3" style="font-size: 11px;">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xho03tqx07mzwb57nha7" alt="Fall guys img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-left fw-light text-capitalize text-white ms-2" style="font-size: 11px;">Fall guys</span>
+                                                    </a>
+                                                </li>
+
+                                                <li><hr class="dropdown-divider text-secondary mb-md-3 mb-sm-4 mb-2"></li>
+
+                                                <div class="dropdown-header text-white lh-1 mb-2 ms-2 mt-2 fw-bolder fs-6" role="menu" aria-labelledby="Discover">Discover</div>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://store.epicgames.com/en-US/" class="dropdown-item text-capitalize mb-1 text-white pt-2 pb-2 rounded-3" style="font-size: 11px;">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/aChpm2RFQ3k8uQWWVwgM" alt="Epi. games store img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-left fw-light text-capitalize text-white ms-2" style="font-size: 11px;">Epic games store</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.fab.com/en-US/" class="dropdown-item text-capitalize mb-1 text-white pt-2 pb-2 rounded-3" style="font-size: 11px;">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhp63wlm07o59mtdawan" alt="Fab img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-left fw-light text-white ms-2" style="font-size: 11px;">Fab</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://sketchfab.com/" class="dropdown-item text-capitalize mb-1 text-white pt-2 pb-2 rounded-3" style="font-size: 11px;">
+                                                        <img class="img-fluid" src="https://img.icons8.com/ios/50/stacking.png" alt="Sketchfab img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-left fw-light text-white ms-2" style="font-size: 11px;">Sketchfab</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.artstation.com/" class="dropdown-item text-capitalize mb-1 text-white pt-2 pb-2 rounded-3" style="font-size: 11px;">
+                                                        <svg class="img-fluid" style="filter: brightness(0) invert(1);" xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 35 32'><path fill='%2313AFF0' fill-rule='evenodd' d='M35 24.354c0-.704-.208-1.36-.565-1.91L22.937 2.525A3.54 3.54 0 0 0 19.813.652h-6.077l17.76 30.666 2.8-4.833c.553-.925.704-1.334.704-2.131m-35-.037 2.956 5.093h.001a3.54 3.54 0 0 0 3.157 1.938h19.624l-4.072-7.03zM10.832 5.621l7.938 13.701H2.893z' clip-rule='evenodd'/></svg>
+                                                        <span class="dropdown-left fw-light text-white ms-2" style="font-size: 11px;">ArtStation</span>
+                                                    </a>
+                                                </li>
+                                            </div>
+
+                                            <!-- The right one -->
+                                            <div class="col-6 second-row">
+                                                <div class="dropdown-header text-white lh-1 mb-2 ms-2 mt-0 fw-bolder fs-6" role="menu" aria-labelledby="Create">Create</div>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.unrealengine.com/?lang=en-US" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrq3wmn07o5xiqxc9fk" alt="Unreal engine img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-capitalize text-white ms-2" style="font-size: 11px;">Unreal engine</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://create.fortnite.com/welcome?team=personal&lang=en-US" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrr3wmp07o53dbxkm7q" alt="Create in Fortnite img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-white ms-2" style="font-size: 11px;">Create in Fortnite</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.metahuman.com/?lang=en-US/" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhug3tsy07mzvdqx61yp" alt="MetaHuman img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-white ms-2" style="font-size: 11px;">MetaHuman</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.twinmotion.com/?lang=en-US" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhu83wn807o5swbsaol6" alt="Twinmotion img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-white ms-2" style="font-size: 11px;">Twinmotion</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.realityscan.com/en-US" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xho33tqz07mz0sqvsu4j" alt="RealityScan img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-white ms-2" style="font-size: 11px;">RealityScan</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://dev.epicgames.com/en-US/services" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/aChpm2RFQ3k8uQWWVwgM" alt="Epic online services img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-capitalize text-white ms-2" style="font-size: 11px;">Epic online services</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="http://store.epicgames.com/en-US/distribution" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/aChpm2RFQ3k8uQWWVwgM" alt="Publish on Epic Games img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-white ms-2" style="font-size: 11px;">Publish on Epic Games</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://www.kidswebservices.com/en-US" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                        <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhoq3tra07mzkzedd1td" alt="Kids web services img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-capitalize text-white ms-2" style="font-size: 11px;">Kids web services</span>
+                                                    </a>
+                                                </li>
+                                                <li role="none" class="me-3 ms-3">
+                                                    <a role="menuitem" href="https://dev.epicgames.com/community?locale=en-us" class="dropdown-item mb-1 pt-2 pb-2 rounded-3">
+                                                         <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/aChpm2RFQ3k8uQWWVwgM" alt="Developer Community img" style="width: 20px; height: 20px; filter: brightness(0) invert(1);"/> 
+                                                        <span class="dropdown-right fw-light text-capitalize text-white ms-2" style="font-size: 11px;">Developer Community</span>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+
+                                <!-- Epic games and Unreal engine is here for the breakpoints and hovering on the images to gray-->
+                                <div class="ms-2">
+                                    <a href="#" class="navbar-brand img-fluid" tabindex="-1">
+                                        <img src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrq3wmn07o5xiqxc9fk" class="unreal-logo-icon d-xxl-none d-xl-none d-lg-block d-md-block d-sm-none d-xs-none"  alt="Unreal Engine icon" width="30" height="30" style="position: relative; top: 3px; ">
+
+                                        <img src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrx3tsh07mzz3amnbyl" class="unreal-logo d-xxl-block d-xl-block d-lg-none d-md-none d-sm-block d-xs-block" style="position: relative; top: 2px;" width="168" height="42" alt="Unreal Engine" role="img">
+                                    </a>
+                                </div>
+
+                                <!-- Menu-icon -->
+                                <!-- To make it look like menu icon again use collapsed class -->
+                                <button class="navbar-toggler collapsed ms-auto" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" title="Unreal engine menu" aria-roledescription="menu" role="menu" tabindex="0">
+                                    <span class="toggler-icon line-1"></span>
+                                    <span class="toggler-icon line-2"></span>
+                                    <span class="toggler-icon line-3"></span>
+                                </button>
+
+                                <!-- For the navlinks -->
+                                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                    <ul class="navbar-nav d-flex align-items-center justify-content-center me-auto" role="list">
+                                        <!-- Overview content -->
+                                        <li class="nav-item dropdown mt-0 ps-1 overview_content">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light" style="font-size: 13px;" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="overview-menu" rel="noreferrer" rel="noppener" target="_blank" title="Overview">Overview 
+                                                <i class="nav-down-arrow ri-arrow-down-s-line fw-lighter fs-6 fst-normal align-middle"></i>
+                                            </a>
+                                            <ul id="overview-menu" class="dropdown-menu rounded-4 mt-0 pt-0 border border-1 border-light-subtle" style="width: 170px; min-width: unset;" role="list" aria-label="Overview submenu">
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Unreal engine</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Features</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Licensing</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">FAQ</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- Uses content -->
+                                        <li class="nav-item dropdown mt-0 ps-1 uses_content">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light" style="font-size: 12px;" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="uses-menu" rel="noreferrer" rel="noppener" target="_blank" title="Uses">Uses
+                                                <i class="nav-down-arrow ri-arrow-down-s-line fw-lighter fs-6 fst-normal align-middle"></i>
+                                            </a>
+                                            <ul id="uses-menu" class="dropdown-menu rounded-4 mt-0 pt-0 border border-1 border-light-subtle" style="width: 225px; min-width: unset;" role="list" aria-label="Uses submenu">
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Switching to Unreal Engine</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">AAA games</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Indie games</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Mobile games</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Unreal Editor for Fortnite</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Film &amp; TV</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Broadcast &amp; live events</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Animation</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Architecture</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Automotive</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Simulation</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light text-uppercase" style="font-size: 13px;">hmi</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- News content -->
+                                        <li class="nav-item mt-0 ps-1 news_content" title="News">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light" style="font-size: 13px;" aria-label="News content" role="link" tabindex="0" rel="noreferrer" rel="noppener" target="_blank">News</a>
+                                        </li>
+                                        <!-- Forums content -->
+                                        <li class="nav-item mt-0 ps-1 forums_content" title="Forums">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light" style="font-size: 13px;" aria-label="Forums content" role="link" tabindex="0" rel="noreferrer" rel="noppener" target="_blank">Forums</a>
+                                        </li>
+                                        <!-- Documentation content -->
+                                        <li class="nav-item mt-0 ps-1 documentation_content" title="Documentation">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light" style="font-size: 13px;" aria-label="Documentation content" role="link" tabindex="0" rel="noreferrer" rel="noppener" target="_blank">Documentation</a>
+                                        </li>
+                                        <!-- Learning content -->
+                                        <li class="nav-item dropdown mt-0 ps-1 learning_content">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light" style="font-size: 13px;" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="learning-menu" rel="noreferrer" rel="noppener" target="_blank" title="Learning">Learning 
+                                                <i class="nav-down-arrow ri-arrow-down-s-line fw-lighter fs-6 fst-normal align-middle"></i>
+                                            </a>
+                                            <ul id="learning-menu" class="dropdown-menu rounded-4 mt-0 pt-0 border border-1 border-light-subtle" style="width: 170px; min-width: unset;" role="list" aria-label="Learning submenu">
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Learning library</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Getting Started</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Snippets repository</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- Connect -->
+                                        <li class="nav-item dropdown mt-0 ps-1 connect_content">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light" style="font-size: 13px;" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="uses-menu" rel="noreferrer" rel="noppener" target="_blank"  title="Connect">Connect
+                                                <i class="nav-down-arrow ri-arrow-down-s-line fw-lighter fs-6 fst-normal align-middle"></i>
+                                            </a>
+                                            <ul id="uses-menu" class="dropdown-menu rounded-4 mt-0 pt-0 border border-1 border-light-subtle" style="width: 225px; min-width: unset;" role="list" aria-label="Uses submenu">
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Unreal Fest</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Events</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Megagrants</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Mobile games</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Service partners</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Students and schools</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Professional training</a></li>
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Training &amp; academic partners</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- Fab content -->
+                                        <li class="nav-item mt-0 ps-1 fab_content" title="Fab">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light" style="font-size: 13px;" aria-label="News link" role="link" tabindex="0" rel="noreferrer" rel="noppener" target="_blank">Fab</a>
+                                        </li>  
+                                        <!--            More at media queries              -->
+                                        <li class="nav-item dropdown mt-0 ps-1 more_content">
+                                            <a href="#" class="nav-arrow nav-link fst-normal mt-0 fw-light align-middle" style="font-size: 13px;" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="more-menu" rel="noreferrer" rel="noppener" target="_blank" title="More">More
+                                                <i class="nav-down-arrow ri-arrow-down-s-line fw-lighter fs-6 fst-normal" style="position: relative; top: 1px;"></i>
+                                            </a>
+                                            
+                                            <!-- More dropdown -->
+                                            <ul id="more-menu" class="dropdown-menu rounded-4 mt-0 pt-0 border border-1 border-light-subtle" style="width: 190px; min-width: unset;" role="list" aria-label="more submenu">
+                                                <!-- News dropdown at media queries -->
+                                                <li class="me-3 ms-3 dropdown dropend position-relative" title="News">
+                                                    <a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">News</a>
+                                                </li>
+                                            
+                                                <!-- Forums dropdown at media queries -->
+                                                <li class="me-3 ms-3 dropdown dropend position-relative" title="Forums">
+                                                    <a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Forums</a>
+                                                </li>
+
+                                                <!-- Documentation dropdown at media queries -->
+                                                <li class="me-3 ms-3 dropdown dropend position-relative" title="Documentation">
+                                                    <a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Documentation</a>
+                                                </li>
+
+                                                <!-- Learning dropdown at media queries -->
+                                                <li class="me-3 ms-3 dropdown dropend position-relative">
+                                                    <a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light d-flex align-items-center justify-content-between" aria-haspopup="true" aria-expanded="false" title="Learning" style="font-size: 13px;">Learning
+                                                        <i class="ri-arrow-right-s-line fw-lighter fs-6 fst-normal align-middle"></i>
+                                                    </a>
+
+                                                    <!-- The submenu inside the learning -->
+                                                    <ul id="learning-menu" class="dropdown-menu rounded-4 border border-1 border-light-subtle ms-1" style="width: 170px; position: absolute; top: 0; left: 97%;">
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 mt-2 text-white pt-2 pb-2 pe-0 rounded-3 fw-light" style="font-size: 13px;">Learning library</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Getting Started</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Snippets repository</a></li>
+
+                                                    </ul>
+                                                </li>
+
+                                                <!-- Connect dropdown at media queries -->
+                                                <li class="me-3 ms-3 dropdown dropend position-relative">
+                                                    <a href="#" class="dropdown-item text-capitalize mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light d-flex align-items-center justify-content-between" title="Connect" style="font-size: 13px;">Connect
+                                                        <i class="ri-arrow-right-s-line fw-lighter fs-6 fst-normal align-middle"></i>
+                                                    </a>
+
+                                                    <!-- The submenu inside the connect -->
+                                                    <ul class="dropdown-menu rounded-4 border border-1 border-light-subtle ms-1" style="width: 230px; position: absolute; top: -30%; left: 97%;">
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 mt-2 text-white pt-2 pb-2 pe-0 rounded-3 fw-light" style="font-size: 13px;">Unreal Fest</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Events</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Megagrants</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Meetups</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Service partners</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Students and schools</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Professional training</a></li>
+                                                        <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;">Training &amp; academic partners</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="me-3 ms-3"><a href="#" class="dropdown-item mb-2 text-white pt-2 pb-2 rounded-3 fw-light" title="Fab" style="font-size: 13px;">Fab</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Search form -->
+                                    <form action="unreal-2.html" method="post" role="search" class="me-auto mb-0 mt-0 search-icon d-flex align-items-center ps-2 flex-xxl-fill flex-xl-fill flex-lg-fill flex-shrink-1 ms-xxl-auto">
+                                        <div class="search-container">
+                                            <label for="Search site" class="visually-hidden">Search the Unreal Engine site</label>
+                                            <input id="Search site" type="search" class="search border border-1 border-secondary-subtle rounded-pill ps-5 fw-light" style="letter-spacing: .45px;"  role="searchbox"  name="Search on Unreal Engine Official Site"  placeholder="Search" aria-placeholder="Search" title="Click here to Search"  required/>
+
+                                            <button type="submit" class="input-icon" aria-label="Search" title="Search icon">
+                                                <svg role="button" tabindex="0" id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                    <path name="search" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.89" stroke="currentColor"  d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"></path>
+                                                </svg>
+                                            </button>
+
+                                            <!-- Search breakpoint inner search button -->
+                                            <div class="search-breakpoint search-con flex-grow-1 flex-shrink-1" >
+                                                <input type="text" name="text" class="input" placeholder="Search" aria-placeholder="Search" required>
+
+                                                <div class="icon">
+                                                    <svg role="button"  class="ionicon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" style="position: relative; bottom: 4px; right: 3px;" >
+                                                    <path name="search" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.89" stroke="currentColor"  d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Locale -->
+                                        <li class="locale-world-icon locale dropdown locale_content ms-1" tabindex="0" role="button">
+                                            <a class="text-decoration-none" href="#" data-bs-toggle="dropdown" title="Locale dropdown">
+                                                <i class="locale-icon ri-global-line fw-lighter fs-4"></i> <!-- The globe icon in navbar -->
+                                            </a>
+                                            <!-- The dropdown for the locale-world-icon -->
+                                            <ul class="dropdown-menu rounded-4 mb-0 lh-sm mt-0 py-2 border border-1 border-light-subtle" style="width: 170px;  min-width: unset;" role="list" aria-label="Locale submenu"> <!--  -->
+                                                <li class="me-3 ms-3"><a class="dropdown-item mb-3 mt-2 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;" href="/en" lang="en">English</a></li>
+                                                <li class="me-3 ms-3"><a class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;" href="/de" lang="de">Deutsch</a></li>
+                                                <li class="me-3 ms-3"><a class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;" href="/es" lang="es">Español</a></li>
+                                                <li class="me-3 ms-3"><a class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;" href="/fr" lang="fr">Français</a></li>
+                                                <li class="me-3 ms-3"><a class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;" href="/pt-br" lang="pt-BR">Português(Brasil)</a></li>
+                                                <li class="me-3 ms-3"><a class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;" href="/zh" lang="zh-Hans">日本語</a></li>
+                                                <li class="me-3 ms-3"><a class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;" href="/ja" lang="ja">中文</a></li>
+                                                <li class="me-3 ms-3"><a class="dropdown-item mb-3 text-white pt-2 pb-2 rounded-3 fw-light" style="font-size: 13px;" href="/ko" lang="ko">한국어</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- Unreal engine navbar cta buttons -->
+                                        <div class="navbar-cta-btn d-flex align-items-center flex-row flex-nowrap flex-shrink-0">
+                                            <!-- Sign in -->
+                                            <a href="https://www.unrealengine.com/login?state=%2Fen-US&lang=en_US" class="unreal_signin_btn rounded-2 ms-2 d-flex align-items-center justify-content-center text-white text-decoration-none" style="font-size: 11px; padding: 6px 13px; letter-spacing: .5px;">Sign in</a>
+                                            <!-- Download -->
+                                            <a href="https://www.unrealengine.com/en-US/download" class="download_btn rounded-2 ms-2 d-flex align-items-center justify-content-center text-black text-decoration-none" style="font-size: 11px; padding: 6px 13px; letter-spacing: .5px;">Download</a>
+                                        </div>
+
+                                    </form>                      
+                                </div>      
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>    
+            
+            <main>
+                <!-- Home section -->
+                <section class="home home-bg-gradient px-lg-4 px-sm-3 px-2 w-100" id="back-to-top">
+                    <div class="container-md container-fluid">
+                        <div class="home-container">
+                            <div class="row gy-5">
+                                <div data-aos="fade-up" data-aos-duration="1500" class="col-xl-6 home-inner-moveup align-self-center" style="z-index: 4;">
+                                    <div class="home-logo">
+                                        <img class="img-fluid mb-4 lh-1" role="img" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrx3tsh07mzz3amnbyl" alt="Unreal engine logo">
+                                    </div>
+
+                                    <div class="home-text">
+                                        <h1 class="display-6 fst-normal text-white mb-4 text-wrap" style="font-family: Inter Tight; font-weight: 600; letter-spacing: 0.65px;">We make the engine. <br> You make it Unreal.</h1>
+                                        <p class="text-white fst-normal mb-4 text-wrap" style="font-weight: 300; line-height: 1.5rem; text-wrap: pretty;">Unreal Engine is built by developers, for developers, with fair terms for all. <br> Because everyone with an idea 
+                                            deserves to use the world’s most open, <br> advanced real-time creation tool to bring it to life.
+                                        </p>
+                                        <div class="home-btn text-sm-start" style="min-width: fit-content;">
+                                            <a href="https://www.unrealengine.com/login?state=%2Fen-US&lang=en_US" class="getunreal-btn text-decoration-none text-black rounded-2 text-capitalize" style="font-size: 13px; font-weight: 400;  padding: 9px 15px;" role="button" rel="noreferrer" rel="noopener" target="_self" title="Get unreal engine">Get unreal engine</a>
+                                            <a href="https://www.unrealengine.com/en-US/download" class="learnabout-btn text-decoration-none text-white rounded-2" style="font-size: 13px; border: .5px solid #727881; font-weight: 400;  padding: 9px 15px;" role="button"  rel="noreferrer" rel="noopener" target="_self" title="Learn about licensing">Learn about licensing</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="500" data-aos-easing="ease-in-sine" class="col-xl-6">
+                                    <div class="video-container align-self-start">
+                                        <video class="rounded-5" autoplay loop muted poster="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/oXIAOr5gQny2cAfPpq02" draggable="false">
+                                            <source src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/d66nnRxEQpatoaaSG3ww" type="video/mp4" title="Home section video" role="norefferer">
+                                            Your browser doesn't support this video tag
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- News section -->
+                <section class="news pt-5 mt-3 w-100" role="button">
+                    <div class="container-md container-fluid p-4">
+                       <div class="news-container">
+                            <div class="clearfix">
+                                <div class="float-start">
+                                    <h3 class="fw-bold lh-sm fst-normal fs-4 fs-sm-6 text-white" style="letter-spacing: 0.5px;">Unreal Engine news</h3>
+                                </div>
+
+                                <div class="float-end">
+                                    <a href="#" class="d-inline-block news-btn text-white rounded-3 btn btn-lg" style="font-size: 12px; border: .5px solid #727881; font-weight: 400;" role="button" rel="noreferrer" rel="noopener" tabindex="0" target="_blank" title="View all">View all</a>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid row gx-2 gy-3 pt-3 stack-915"> 
+                              <!-- First card -->
+                                <div class="col-lg-6">
+                                    <div class="card overflow-hidden h-100 rounded-4 ps-2" style="border: 0.3px solid #333;">
+                                        <div class="row gx-2 h-100">
+                                            <div class="col-6 p-3 d-flex align-items-center"> <!-- p-3 is the padding so we can add padding around the image to not be tight -->
+                                                <img class="img-fluid rounded-4 vw-75" style="object-fit: cover; height: 148px;" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:256/output=format:webp/cmhnchhpkez5507ony9ahr4vx?width=256 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:256/output=format:webp/cmhnchhpkez5507ony9ahr4vx?width=256 2x"  src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:256/output=format:webp/cmhnchhpkez5507ony9ahr4vx?width=256" alt="Unreal Engine 5.7 is now available" role="img" tabindex="-1" loading="lazy" aria-label="News blog">
+                                            </div>
+
+                                            <div class="col-6 d-flex flex-column">
+                                                <div class="card-body d-flex justify-content-between flex-column p-3">
+                                                    <div>
+                                                        <h6 class="card-title text-white h6 fst-normal fw-bolder lh-base" style="font-size: 15px;">Unreal Engine 5.7 is now available</h6>
+                                                        <p class="card-text my-3 lh-base lh-1 fst-normal fw-normal d-sm-block text-truncate" style="font-size: 14px; color: #929294;">Create in real time, render every detail. <br> Find out what's new.</p>
+                                                        <a href="#" class="d-inline-block text-decoration-none rounded-4 text-white fw-light fst-normal" style="background: #3E3E41; font-size: 11px; padding: 5px 14px;" role="button">News</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
+
+                               <!-- Second card -->
+                                <div class="col-lg-6">
+                                    <div class="card overflow-hidden h-100 rounded-4" style="border: 0.3px solid #333;">
+                                        <div class="row gx-2 h-100">
+                                            <div class="col-6 p-3 d-flex align-items-center"> <!-- p-3 is the padding so we can add padding around the image to not be tight -->
+                                                <img class="img-fluid rounded-4 ms-2 vw-75" style="object-fit: cover; height: 148px;" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:256/output=format:webp/cmhnchhpkez5507ony9ahr4vx?width=256 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:256/output=format:webp/cmhnchhpkez5507ony9ahr4vx?width=256 2x"  src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:256/output=format:webp/cmhnchhpkez5507ony9ahr4vx?width=256" alt="Thanks for tuning into the State of Unreal" role="img" tabindex="-1" loading="lazy" aria-label="Event blog">
+                                            </div>
+
+                                            <div class="col-6 d-flex flex-column">
+                                                <div class="card-body d-flex justify-content-between flex-column p-3">
+                                                    <div>
+                                                        <h6 class="card-title text-white h6 fst-normal fw-bolder text-wrap text-break lh-base" style="font-size: 15px;">Thanks for tuning into <br> the State of Unreal</h6>
+                                                        <p class="card-text my-3 lh-base fst-normal fw-light d-sm-block text-truncate" style="font-size: 14px; color: #929294;">If you missed it and want to catch up on <br> the action, which is the replay here.</p>
+                                                        <a href="#" class="d-inline-block text-decoration-none rounded-4 text-white fw-light fst-normal" style="background: #3E3E41; font-size: 11px; padding: 5px 14px;" role="button">Event</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                    
+                </section>
+                
+                <!-- Features section -->
+                <section class="feature pt-5 mt-3 w-100">
+                    <div class="container-md container-fluid p-4">
+                        <div class="row gy-5 align-items-center justify-content-between" style="cursor: pointer;">
+                            <div class="col-xl-6">
+                                <div class="feature-text">
+                                    <h6 class="text-white fst-normal fw-bold fs-xl-6 fs-sm-5 lh-1 mb-4" style="letter-spacing: .1px;  font-family: Inter Tight; ">Unreal Engine features</h6>
+                                    <h2 class="display-6 fw-bold fst-normal mb-3 text-white" style="letter-spacing: .1px; font-family: Inter Tight;">Power that can keep up with <br> the wildest imaginations.</h2>
+                                    <p class="fw-light fst-normal mb-4 text-break responsive-text lh-base" style="color: #A2A1A1; text-wrap: pretty;">Define rule-breaking physics, create lifelike characters, or animates the <br> movement of a single blade of grass-and render it all the speed you can <br> dream it. We originallyed Unreal Engine to give us the creative <br> freedom, we always wanted as developers. Today, our goal is to push the <br> boundaries of innovation with every release so that only you, not your tools, <br> get to decide the limits of what's possible.</p>
+                                    <a href="#" class="feature-btn d-inline-block text-decoration-none text-black rounded-2 btn btn-sm" style="font-size: 13px; font-weight: 400;  padding: 9px 15px;" role="button" rel="noreferrer" rel="noopener" target="_self" title="See all features">See all features</a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 align-self-start">
+                                <div class="feature-img">
+                                    <img class="img-fluid rounded-5 bg-image bg-cover bg-center object-fit-cover" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:900/output=format:webp/WtzzP9AbRGFod5zfQqVM" width="900" height="1080" alt="A dark halloween image" role="img" tabindex="-1" loading="lazy" aria-label="A dark halloween image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Games section -->
+                <section class="game pt-5 px-lg-4 px-sm-3 px-2 mb-xxl-4 mb-xl-3 mb-4 w-100">
+                    <div class="container-md container-fluid p-4">
+                        <div class="game-text">
+                            <h2 class="display-6 fw-bold fst-normal mb-3 text-white" style="letter-spacing: .1px;">Ships fully loaded for everyone.</h2>
+                            <p class="fw-light fst-normal mb-4 responsive-text lh-base" style="color: #A2A1A1; text-wrap: balance; text-wrap: pretty;">Develop games produce or animate films. Visualize spaces or products. Create next- <br> generation to series. Or build immersive experience we haven't even thought of yet. <br> No matter what style, industry screen size, or project you have in mind, Unreal Engine <br> comes standard with everything you need to help you make it real.</p>
+                        </div>
+
+                        <div class="game-container container w-100 pt-lg-5 pt-sm-3 pt-2 d-flex flex-row flex-xxl-wrap flex-xl-wrap flex-wrap gap-3 align-items-xl-center">
+
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/games" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/hrNK7mIVQIKFCMzAApAC?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/hrNK7mIVQIKFCMzAApAC?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/hrNK7mIVQIKFCMzAApAC?width=540"  alt="Hellblade woman" role="img" loading="lazy" aria-label="An hellblade woman" title="Hell-blade woman">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Games
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/indie-games" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/yiR8DHWSWWmMJWzo5aiw?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/yiR8DHWSWWmMJWzo5aiw?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/yiR8DHWSWWmMJWzo5aiw?width=540" alt="Hellblade woman" role="img" loading="lazy" aria-label="An hellblade woman" title="Hell-blade woman">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Indie games
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/mobile-games" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/EbZrZA7PSAiuLE94k9SJ?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/EbZrZA7PSAiuLE94k9SJ?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/EbZrZA7PSAiuLE94k9SJ?width=540" alt="Tower of Fantasy" role="img" loading="lazy" aria-label="Tower of Fantasy image" title="Tower of Fantasy">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Mobile games
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/switching-to-unreal-engine" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/12evTKP8RnsegoHHdQpw?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/12evTKP8RnsegoHHdQpw?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/12evTKP8RnsegoHHdQpw?width=540" alt="Switching to Unreal Engine" role="img" loading="lazy" aria-label="Switching to Unreal Engine" title="Switching to Unreal Engine">
+                                </a>
+                                <div class="card-text  flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Switching to Unreal <br> Engine  
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill"> <br>
+                                        <svg class="fw-bolder p-1 " xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/uefn-unreal-editor-for-fortnite" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/bsGPpeaHRqea266Ahe9z?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/bsGPpeaHRqea266Ahe9z?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/bsGPpeaHRqea266Ahe9z?width=540"  alt="Fortnite screenshot" role="img" loading="lazy" aria-label="Fortnite screenshot" title="Fortnite screenshot">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Unreal Editor for Fortnite
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/film-television" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/HFryruVT4uY7vvD0Q7oA?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/HFryruVT4uY7vvD0Q7oA?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/HFryruVT4uY7vvD0Q7oA?width=540"  alt="Hellblade woman" role="img" loading="lazy" aria-label="An hellblade woman" title="Hell-blade woman">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Film &amp; TV
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/broadcast-live-events" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/yLXj2PQTS2qNME3QqzrA?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/yLXj2PQTS2qNME3QqzrA?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/yLXj2PQTS2qNME3QqzrA?width=540"  alt="Hellblade woman" role="img" loading="lazy" aria-label="An hellblade woman" title="Hell-blade woman">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Broadcast &amp; live events
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/animation" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/tmxKiYMPRdybg5i9Kazh?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/tmxKiYMPRdybg5i9Kazh?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/tmxKiYMPRdybg5i9Kazh?width=540"  alt="Hellblade woman" role="img" loading="lazy" aria-label="An hellblade woman" title="Hell-blade woman">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Animation
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/architecture" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/2zynOZMhTAuHAnBKViiE?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/2zynOZMhTAuHAnBKViiE?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/2zynOZMhTAuHAnBKViiE?width=540"  alt="Architecture" role="img" loading="lazy" aria-label="Architecture" title="Architecture">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Architecture
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/automotive" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172"  srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/YmIY1rJWQguWLcELaoWB?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/YmIY1rJWQguWLcELaoWB?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/YmIY1rJWQguWLcELaoWB?width=540" alt="Automotive" role="img" loading="lazy" aria-label="Automotive" title="Automotive">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Automotive
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cards position-relative">
+                                <a href="https://www.unrealengine.com/en-US/uses/simulation" class="card-img text-decoration-none">
+                                    <img class="rounded-4" width="305" height="172" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/QLF8b9dYTUCNoyMVLRFx?width=540 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/QLF8b9dYTUCNoyMVLRFx?width=540 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:540/output=format:webp/QLF8b9dYTUCNoyMVLRFx?width=540" alt="Simulation" role="img" loading="lazy" aria-label="Simulation" title="Simulation">
+                                </a>
+                                <div class="card-text d-flex align-items-center flex-row flex-nowrap gap-2 text-white fw-bolder fs-6 fst-normal" style="position:absolute; bottom: 18px; left: 20px;">
+                                    Simulation
+                                    <span class="d-inline-flex align-items-center justify-content-center bg-white text-black rounded rounded-pill">
+                                        <svg class="fw-bolder p-1"  xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                </section>   <br><br>
+                <!-- The horizontal rule after the game section -->
+                <hr class="container border-1 border-top mx-lg-5pt-lg-1 pt-md-3 mt-lg-1 d-none d-xxl-block d-xl-block d-lg-block" style="color: #343437;">
+
+                <!-- Install section -->
+                <section class="install pt-5 mt-3 w-100">
+                    <!-- Two spinner balls -->
+                       <div class="spinner mx-auto" style="position: relative; top: 10%;"></div>
+                    <div class="container-md container-fluid p-4">
+                        <div class="install-text">
+                            <div class="d-none d-md-block clearfix">
+                                <div class="float-start">
+                                    <h1 class="fw-bold text-white lh-1 display-6 lead" style="font-family: Inter Tight;">How to install Unreal Engine</h1>
+                                </div>
+                                <div class="float-end">
+                                    <a href="#" class="d-inline-block news-btn text-white rounded-2 btn btn-lg" style="font-size: 14px; border: .5px solid #727881; font-weight: 400;" role="button" rel="noreferrer" rel="noopener" tabindex="0" target="_blank" title="Download Instructions">Download Instructions</a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-wrap align-items-center d-md-none">
+                                <h1 class="fw-bold text-white lh-base display-6 lead mb-3 mb-md-4 mb-sm-2" style="font-family: Inter Tight;">How to install Unreal Engine</h1>
+                                <a href="#" class="news-btn text-white rounded-2 btn btn-lg mt-4" style="font-size: 14px; border: .5px solid #727881; font-weight: 400;" role="button" rel="noreferrer" rel="noopener" tabindex="0" target="_blank" title="Download Instructions">Download Instructions</a>
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-lg-3 mt-sm-4 mt-3 pt-md-4">
+                            <div class="col-12 col-lg-4">
+                                <div class="row-bg py-4 ps-4 pe-5 rounded rounded-4 m-0 h-100" style="background: #1C1C20;  border: 0.1px solid #727881;">
+                                    <a href="javascript:void(0)" class="row-btn text-decoration-none btn btn-sm rounded-4 text-black mb-4 text-uppercase" style="padding: 5px 14px; font-size: 11px; font-weight: 500; background: linear-gradient(135deg, #5EBEFE, #CABAF9)" title="Step 1" role="none">Step 1</a>
+                                    <h6 class="text-white fst-normal fw-bold fs-6 mb-3">Download the launcher</h6>
+                                    <p class="fw-light fst-normal text-break lh-base" style="font-size: 12px; color: #B8B6B7;">Before you can install and run Unreal Editor, you'll <br> need to download and install the Epic Games <br> launcher.</p>
+                                    <a href="#" class="feature-btn d-inline-block text-decoration-none text-black rounded-2 btn btn-sm" style="font-size: 13px; font-weight: 400; padding: 9px 15px;" title="Download launcher" role="button" rel="noreferrer" rel="noopener" target="_self" title="Download Launcher">Download Launcher</a>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="row-bg py-4 ps-4 pe-5 rounded rounded-4 m-0 h-100" style="background: #1C1C20;  border: 0.1px solid #727881;">
+                                    <a href="javascript:void(0)" class="row-btn text-decoration-none btn btn-sm rounded-4 text-black mb-4 text-uppercase" style="font-weight: 500; padding: 5px 14px; font-size: 11px; background: linear-gradient(135deg, #9E94F7, #DFB0E3)" title="Step 2" role="none">Step 2</a>
+                                    <h6 class="text-white fst-normal fw-bold fs-6 mb-3">Install Epic Games launcher</h6>
+                                    <p class="fw-light fst-normal text-break lh-base mb-3" style="text-wrap: pretty; font-size: 12px; color: #B8B6B7;">Once downloaded and installed, <span class="row-span" role="link" target="_self" title="Open the launcher"><a href="com.epicgames.launcher://ue/" class="text-decoration-underline text-info d-inline">open the launcher</a></span> <br> and create a log into your Epic Games account</p>
+                                    <p class="fw-light fst-normal lh-base" style=" font-size: 12px; color: #B8B6B7; text-wrap: pretty;"><a href="https://www.unrealengine.com/support?lang=en-US" class="d-inline-block text-info text-decoration-underline" role="link" target="_self">Get support,</a> or restart your Epic Games launcher <br> download in Step 1.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="row-bg py-4 ps-4 pe-5 rounded rounded-4 m-0 h-100" style="background: #1C1C20;  border: 0.1px solid #727881;">
+                                    <a href="javascript:void(0)" class="row-btn text-decoration-none btn btn-sm rounded-4 text-black mb-3 text-uppercase" style="font-weight: 500; padding: 5px 14px; font-size: 11px; background: linear-gradient(135deg, #C576E7, #F2A7BF);" title="Step 3" role="none">Step 3</a>
+                                    <h6 class="text-white fst-normal fw-bold fs-6 mb-3">Install Unreal Engine</h6>
+                                    <p class="fw-light fst-normal text-break lh-base" style="font-size: 12px; color: #B8B6B7;">Once logged in, navigate to the Unreal Engine tab <br> and click the Install to download the most <br> recent version.</p>
+                                    <a href="https://www.youtube.com/watch?v=rldy9yY0yDU" class="d-inline-flex align-items-center justify-content-center text-decoration-none text-white rounded-2 btn btn-sm unreal_signin_btn" style="font-size: 13px; font-weight: 400;  padding: 2px 10px;" title="Watch how to install" aria-label="Watch how to install" role="button" rel="noreferrer" rel="noopener" target="_self"><i class="bi bi-play d-inline-flex align-items-center fs-2"></i>Watch how to install</a>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <div class="row-flex-bg d-md-flex align-items-center justify-content-between rounded-4 flex-grow-1 flex-shrink-1 p-4 pt-lg-4 pt-sm-3 pb-lg-2 pb-sm-2 ps-lg-4 ps-sm-3 ps-2 pe-4 mx-1 my-3 my-md-0 my-sm-3" style="background: #1C1C20; border: .5px solid #727881; margin-top: -29px;">
+                            <div class="row-text">
+                                <h6 class="fw-bold text-white fst-normal lh-sm mb-2">Looking for Unreal Editor for Fortnite?</h6>
+                                <p class="fw-light" style="font-size: 12px; color: #B8B6B7;">Get up and running in Unreal Editor for Fortnite from the Epic Games launcher.</p>
+                            </div> 
+                            <div class="row-link">
+                                <a href="https://dev.epicgames.com/documentation/uefn/launching-in-unreal-editor-for-fortnite" class="row-link unreal_signin_btn text-decoration-none text-white btn btn-lg" role="button" tabindex="0" target="_self" title="Download UEFN" style="font-size: 13px; padding: 10px 17px; letter-spacing: .5px;">Download UEFN</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Started section -->
+                <section class="pt-5 mt-5 started w-100 position-relative pb-lg-5 pb-md-4 pb-sm-4 pb-4" style="background: #18181C; min-height: 155vh;">
+                    <div class="container-md container-fluid p-4">
+                        <div class="started-texts">
+                            <h1 class="fw-bold text-white lh-base display-6 lead" style="font-family: Inter Tight;">How to get started in Unreal Engine</h1>
+                            <p class="fw-light fst-normal text-break lh-base my-4" style="font-size: 15px; color: #B8B6B7;">New to real-time 3D? Making the switch from another engine? Wherever you’re coming <br> from, we’ve got onboarding, tutorials, samples, documentation, and more to help you <br> get started. </p>
+                        </div>
+                        <div class="started-flex d-flex align-items-center flex-row gap-2">
+                            <li><a href="#" class="text-decoration-none btn btn-sm text-black bg-white rounded-pill fw-light" role="button" aria-label="Games" title="Games" style="font-size: 14px; padding:5px 15px;" >Games</a></li>
+                            <li><a href="#" class="started-link text-decoration-none bg-dark text-white btn btn-sm rounded-pill fw-light" role="button" aria-label="Unreal Editor for Fortnite" title="Unreal Editor for Fortnite"  style="font-size: 14px; padding: 5px 15px; " >Unreal Editor for Fortnite</a></li>
+                            <li><a href="#" class="started-link text-decoration-none bg-dark text-white btn btn-sm rounded-pill fw-light" role="button" aria-label="Architecture" title="Architecture" style="font-size: 14px; padding: 5px 15px;" >Architecture</a></li>
+                            <li><a href="#" class="started-link text-decoration-none bg-dark text-white btn btn-sm rounded-pill fw-light" role="button" aria-label="Film and TV" title="Film and TV" style="font-size: 14px; padding: 5px 15px;" >Film and TV</a></li>
+                            <li><a href="#" class="started-link text-decoration-none bg-dark text-white btn btn-sm rounded-pill fw-light" role="button" aria-label="Animation" title="Animation" style="font-size: 14px; padding: 5px 15px;" >Animation</a></li>
+                            <li><a href="#" class="started-link text-decoration-none bg-dark text-white btn btn-sm rounded-pill fw-light" role="button" aria-label="Simulation" title="Simulation" style="font-size: 14px; padding: 5px 15px;" >Simulation</a></li>
+                        </div>
+
+                        <div class="tutorials-container pt-lg-5 pt-sm-3 pt-5">
+                            <div class="clearfix">
+                                <div class="float-start">
+                                    <h6 class="text-white fw-bold fs-5 lh-sm">Tutorials</h6>
+                                </div>
+                                <div class="float-end d-flex align-items-center gap-2">
+                                    <a href="https://dev.epicgames.com/community/unreal-engine/learning" class="news-btn text-white rounded-2 btn btn-bg" style="font-size: 12px; border: .5px solid #727881; font-weight: 400;" role="button" rel="noreferrer" rel="noopener" tabindex="0" target="_blank" title="Go to library">Go to library</a>
+                                    <h6 class="mb-0 documentation-hide-text">Documentation</h6>
+                                </div>
+                            </div>
+
+                            <!-- Tutorials -->
+                            <div class="tutorials-card-container mt-lg-3 mt-2">
+                                <div class="d-flex align-items-center flex-nowrap gap-3 max1295-flex-wrap max698-stack">
+                                    <div class="card started-cards rounded rounded-4 max1295-w425 max698-big" style="width: 300px; height: 395px; border: .4px solid #444448; box-sizing: border-box; padding: 12px;" role="button">
+                                        <a href="https://dev.epicgames.com/community/learning/courses/3ke/your-first-hour-in-unreal-engine-5-2/vvdk/your-first-hour-in-unreal-engine-5-2-overview" class="text-decoration-none d-block h-100">
+                                            <img class="img-fluid card-img-top rounded rounded-3" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:660/output=format:webp/q46sIAuZQIisZcqbCfAD?width=660 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/q46sIAuZQIisZcqbCfAD?width=1200 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/q46sIAuZQIisZcqbCfAD?width=1200" loading="lazy" alt="Your first hour in Unreal Engine" style="width: 100%; height: 250px; object-fit: cover;">
+
+                                            <div class="card-body p-2 overflow-hidden" style="height: calc(400px - 250px - 24px);">
+                                                <h6 class="card-title text-white fw-bold mb-1 mt-2" style="font-size: 13px;">Your first Hour in Unreal Engine 5.2</h6>
+                                                <p class="card-text fw-light mb-1" style="font-size: 11px; color: #B3B3B4;">Epic Online Learning · 3 years ago</p>
+                                                <h5 class="lh-base fw-light mb-0" style="color: #B3B3B4; font-size: 13px;">We'll look at the launcher, editor <br> creating a basic level including lightn...</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="card started-cards rounded rounded-4 max1295-w425 max698-big" style="width: 300px; height: 395px; border: .4px solid #444448; box-sizing: border-box; padding: 12px;" role="button">
+                                        <a href="https://dev.epicgames.com/community/learning/tutorials/e2V/your-first-game-in-unreal-engine-5" class="text-decoration-none d-block h-100">
+                                            <img class="img-fluid card-img-top rounded rounded-3" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:660/output=format:webp/pkoSpZiWQGuTRGHwakdY?width=660 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/pkoSpZiWQGuTRGHwakdY?width=1200 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/pkoSpZiWQGuTRGHwakdY?width=1200" loading="lazy" alt="Stack 'O' Bot" style="width: 100%; height: 250px; object-fit: cover;">
+
+                                            <div class="card-body p-2 overflow-hidden" style="height: calc(400px - 250px - 24px);">
+                                                <h6 class="card-title text-white fw-bold mb-1 mt-2" style="font-size: 13px;">Your first Game in Unreal Engine 5</h6>
+                                                <p class="card-text fw-light mb-1" style="font-size: 11px; color: #B3B3B4;">Andi · 4 years ago</p>
+                                                <h5 class="lh-base fw-light mb-0" style="color: #B3B3B4; font-size: 13px;">Pratical in-editor demo showcasing <br> UE5's rapid game creatiom from...</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="card started-cards rounded rounded-4 max1295-w425 max698-big" style="width: 300px; height: 395px; border: .4px solid #444448; box-sizing: border-box; padding: 12px;" role="button">
+                                        <a href="https://dev.epicgames.com/community/learning/paths/0w/unreal-engine-beginplay" class="text-decoration-none d-block h-100">
+                                            <img class="img-fluid card-img-top rounded rounded-3" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:660/output=format:webp/UjuiRlHQlWyx3x6Sou89?width=660 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/UjuiRlHQlWyx3x6Sou89?width=1200 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/UjuiRlHQlWyx3x6Sou89?width=1200" loading="lazy" alt="BeginPlay" style="width: 100%; height: 250px; object-fit: cover;">
+
+                                            <div class="card-body p-2 overflow-hidden" style="height: calc(400px - 250px - 24px);">
+                                                <h6 class="card-title text-white fw-bold mb-1 mt-2" style="font-size: 13px;">BeginPlay</h6>
+                                                <p class="card-text fw-light mb-1" style="font-size: 11px; color: #B3B3B4;">Epic Online Learning · 4 years ago</p>
+                                                <h5 class="lh-base fw-light mb-0" style="color: #B3B3B4; font-size: 13px;">A developer focused overview of <br> Unreal Engine's features and tools.</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- For the documentation text to show at 1295px -->
+                                    <h6 class="d-none documentation-show-text text-white fw-bold w-100 my-3">Documentation</h6>
+                                    
+                                    <div class="card started-cards responsive-started rounded rounded-4 max1295-order-last max1295-w-70 max698-big" style="width: 300px; height: 395px; border: .4px solid #444448; box-sizing: border-box; padding: 12px;" role="button">
+                                        <div class="card-body p-2 overflow-hidden d-flex align-content-start justify-content-between flex-column" style="height: calc(400px - 250px - 24px);">
+                                            <div class="first-card" role="list">
+                                              <h6 class="card-title text-white fw-light lh-base mb-3" style="font-size: 13px; white-space: normal; word-break: break-word;">Know what you want to do, but not how? Dig into our wide range of documentation to find your footing!</h6>
+                                              <li class="d-flex align-items-center"><a href="https://docs.unrealengine.com/understanding-the-basics-of-unreal-engine/" class="d-inline-block text-decoration-none firstcard-link fw-light fst-normal mb-1" title="Understanding the Basics" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" style="font-size: 12px;">Understanding the Basics  <i class="ri-arrow-right-wide-fill"></i></a></li>
+                                              <li class="d-flex align-items-center"><a href="https://docs.unrealengine.com/working-with-content-in-unreal-engine/" class="d-inline-block text-decoration-none firstcard-link fw-light fst-normal mb-1" title="Working with Content" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" style="font-size: 12px;">Working with Content  <i class="ri-arrow-right-wide-fill"></i></a></li>
+                                              <li class="d-flex align-items-center"><a href="https://docs.unrealengine.com/unreal-engine-programming-and-scripting/" class="d-inline-block text-decoration-none firstcard-link fw-light fst-normal mb-1" title="Programming & Scripting" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" style="font-size: 12px;">Programming & Scripting  <i class="ri-arrow-right-wide-fill"></i></a></li>
+                                              <li class="d-flex align-items-center"><a href="https://docs.unrealengine.com/setting-up-your-production-pipeline-in-unreal-engine" class="d-inline-block text-decoration-none firstcard-link fw-light fst-normal mb-1 text-capitalize" title="Setting up your production pipeline" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" style="font-size: 12px;">Setting up your production pipeline <i class="ri-arrow-right-wide-fill"></i></a></li>
+                                            </div>
+                                            <div class="second-card">
+                                                <a href="https://docs.unrealengine.com/" class="unreal_signin_btn text-decoration-none text-white btn btn-lg" role="button" tabindex="0" target="_self" title="Go to Documentation" style="font-size: 13px; padding: 4px 12px; letter-spacing: .5px;">Go to Documentation</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-container pt-lg-5 pt-sm-3 pt-5">
+                            <div class="clearfix">
+                                <div class="float-start">
+                                    <h6 class="text-white fw-bold fs-5 mb-2">Sample projects</h6>
+                                    <p class="fw-light fst-normal text-break lh-base" style="font-size: 14px; color: #B8B6B7;">Samples are pre-built projects designed to help you quilcky learn and get working un Unreal Engine without needing to <br> start from scratch. Download, play, deconstruct, and make them your own.</p>
+                                </div>
+                                <div class="float-end">
+                                    <a href="https://docs.unrealengine.com/samples-and-tutorials-for-unreal-engine/" class="news-btn text-white rounded-2 btn btn-bg mt-3 mb-lg-3 mb-sm-2 mb-3" style="font-size: 12px; border: .5px solid #727881; font-weight: 400;" role="button" rel="noreferrer" rel="noopener" tabindex="0" target="_blank" title="More samples">More samples</a>
+                                </div>
+                            </div> 
+                            
+                               <!-- Smaple projects -->
+                            <div class="sample-card-container d-flex align-items-center gap-3 mt-lg-4 mt-sm-3 mt-2">
+                                <div class="card projects-link rounded rounded-4" style="width: 300px; height: 250px; border: .4px solid #444448; padding: 12px;" role="button">
+                                    <a href="https://dev.epicgames.com/community/learning/paths/yG/stack-o-bot" class="text-decoration-none d-block h-100">
+                                        <img class="img-fluid card-img-top rounded rounded-3" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:660/output=format:webp/O06ve5kTQa19L5KWEkYf?width=660 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/O06ve5kTQa19L5KWEkYf?width=1200 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/O06ve5kTQa19L5KWEkYf?width=1200" loading="lazy" alt="Stack 'O' Bot" style="width: 100%; height: auto; object-fit: cover;">
+
+                                        <div class="card-body p-2 overflow-hidden" style="height: calc(430px - 270px - 25px);">
+                                            <h6 class="card-title text-white fw-bold mb-2 mt-2 text-nowrap" style="font-size: 13px;">Stack 'O' Bot</h6>
+                                            <h5 class="fw-light lh-base" style="font-size: 12px; color: #B3B3B4;">Stack 'O' Bot is a new small project that <br> can be a good starting point for...</h5>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card projects-link rounded rounded-4" style="width: 300px; height: 250px; border: .4px solid #444448; padding: 12px;" role="button">
+                                    <a href="https://docs.unrealengine.com/content-examples-sample-project-for-unreal-engine/" class="text-decoration-none d-block h-100">
+                                        <img class="img-fluid card-img-top rounded rounded-3" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:660/output=format:webp/F7VBWUu1TzGmHl5MJxFK?width=660 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/F7VBWUu1TzGmHl5MJxFK?width=1200 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/F7VBWUu1TzGmHl5MJxFK?width=1200" loading="lazy" alt="Content Examples" style="width: 100%; height: auto; object-fit: cover;">
+
+                                        <div class="card-body p-2 overflow-hidden" style="height: calc(430px - 270px - 25px);">
+                                            <h6 class="card-title text-white fw-bold mb-2 mt-2 text-nowrap" style="font-size: 13px;">Content Examples</h6>
+                                            <h5 class="fw-light lh-base" style="font-size: 12px; color: #B3B3B4;">Get up to speed with a variety of <br> different techniques for building your...</h5>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card projects-link rounded rounded-4" style="width: 300px; height: 250px; border: .4px solid #444448; padding: 12px;" role="button">
+                                    <a href="https://docs.unrealengine.com/lyra-sample-game-in-unreal-engine/" class="text-decoration-none d-block h-100">
+                                        <img class="img-fluid card-img-top rounded rounded-3" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:660/output=format:webp/HPomalbUT2CUJbTidt1e?width=660 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/HPomalbUT2CUJbTidt1e?width=1200 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/HPomalbUT2CUJbTidt1e?width=1200" loading="lazy" alt="Lyra screenshot" style="width: 100%; height: auto; object-fit: cover;">
+
+                                        <div class="card-body p-2 overflow-hidden" style="height: calc(430px - 270px - 25px);">
+                                            <h6 class="card-title text-white fw-bold mb-2 mt-2 text-nowrap" style="font-size: 13px;">Lyra Sample Game</h6>
+                                            <h5 class="fw-light lh-base" style="font-size: 12px; color: #B3B3B4;">A perfect starting point for those <br> looking to jump right into Unreal Engin...</h5>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card projects-link rounded rounded-4" style="width: 300px; height: 250px; border: .4px solid #444448; padding: 12px;" role="button">
+                                    <a href="https://forums.unrealengine.com/t/explore-cropout-a-top-down-casual-rts-sample-project-general-announcements/1239909" class="text-decoration-none d-block h-100">
+                                        <img class="img-fluid card-img-top rounded rounded-3" srcset="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:660/output=format:webp/60jWCSuxSPaoEOEuzrvD?width=660 1x, https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/60jWCSuxSPaoEOEuzrvD?width=1200 2x" src="https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:1200/output=format:webp/60jWCSuxSPaoEOEuzrvD?width=1200"  loading="lazy" alt="Cropout screenshot" style="width: 100%; height: auto; object-fit: cover;">
+
+                                        <div class="card-body p-2 overflow-hidden" style="height: calc(430px - 270px - 25px);">
+                                            <h6 class="card-title text-white fw-bold mb-2 mt-2 text-nowrap" style="font-size: 13px;">Cropout</h6>
+                                            <h6 class="fw-light lh-base" style="font-size: 12px; color: #B3B3B4;">A casual game sample that shows you <br> best practices for creating for cross-...</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Learn section -->
+                <section class="pt-5 learn w-100" style="background: #101014; min-height: 145vh;">
+                    <div class="container-md container-fluid p-4">
+                        <div class="learn-forums-container">
+                            <div class="learn-texts d-flex align-middle gap-2 flex-nowrap flex-row mb-4">
+                                <img class="img-fluid" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/aChpm2RFQ3k8uQWWVwgM" alt="Epic-games logo" style="width: 24px; height: 24px;" title="Epic Games">
+                                <h6 class="text-white lh-sm text-capitalize" style="font-weight: 600; font-size: 16px; font-family: Inter Tight;">Developer community</h6>
+                            </div>
+                            <div class="learn-text-gradient mb-lg-4 mb-sm-3 mb-5">
+                                <h1 class="fw-bold lh-sm display-6 lead" style="white-space: normal; text-wrap: balance; font-family: Inter Tight;">Learn new things. Connect <br> with people like you. <span class="text-gradient" style="background: linear-gradient(to right, #8E8DFB, #AD9BF0, #E8B5E0); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Join the <br> Epic Developer Community.</span></h1>
+                            </div>
+
+                            <div class="learn-row-container mb-lg-5 mb-md-3 mb-4">
+                                <div class="learn-row d-flex flex-row flex-nowrap align-items-center justify-content-between gap-3"> 
+
+                                    <div class="card learn-card rounded rounded-5" style="width: 287.59px; height: 185px;" role="button">
+                                        <a href="https://dev.epicgames.com/community/unreal-engine/learning" role="link" rel="noopener" target="_self" class="text-decoration-none">
+                                            <div class="card-body d-flex align-items-center flex-column flex-nowrap"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 16 16"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#D7BAF8"/><stop offset="100%" stop-color="#33BFFF"/></linearGradient></defs><path  fill="url(#grad1)" d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/><path  fill="url(#grad1)" d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/></svg>
+                                                <h6 class="text-white fs-6 mb-2 lh-sm my-4" style="font-weight: 600;">Tutorials</h6>
+                                                <p class="fst-normal lh-base fw-normal" style="font-size: 14px; color: #B3B3B4; font-family: Inter Tight;">The latest tutorials &amp; courses <br> from our experts.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="card learn-card rounded rounded-5 d-flex flex-column" style="width: 287.59px; height: 185px;" role="button">
+                                        <a href="https://docs.unrealengine.com/" role="link" rel="noopener" target="_self" class="text-decoration-none">
+                                            <div class="card-body d-flex align-items-center flex-column flex-nowrap"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 16 16"><defs><linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#CCA8E6"/><stop offset="100%" stop-color="#8589FE"/></linearGradient></defs><path fill="url(#grad2)" d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/><path  fill="url(#grad2)"d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/></svg>
+                                                <h6 class="text-white fs-6 mb-2 lh-sm my-4" style="font-weight: 600;">Documentation</h6>
+                                                <p class="fst-normal lh-base fw-normal" style="font-size: 14px; color: #B3B3B4; font-family: Inter Tight;">Complete resources for <br>  learning Unreal Engine.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="card learn-card rounded rounded-5" style="width: 287.59px; height: 185px;" role="button">
+                                        <a href="https://docs.unrealengine.com/sample-game-projects-for-unreal-engine/" role="link" rel="noopener" target="_self" class="text-decoration-none">
+                                            <div class="card-body d-flex align-items-center flex-column flex-nowrap"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 16 16"><defs><linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8E8DFA"/><stop offset="100%" stop-color="#E5B3E1"/></linearGradient></defs><path fill="url(#grad3)" d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path  fill="url(#grad3)" d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.440.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/></svg>
+                                                <h6 class="text-white fs-6 mb-2 lh-sm my-4" style="font-weight: 600;">Sample projects</h6>
+                                                <p class="fst-normal lh-base fw-normal" style="font-size: 14px; color: #B3B3B4; font-family: Inter Tight;">Explore Unreal Engine with a <br> &nbsp;range of example content.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="card learn-card rounded rounded-5" style="width: 287.59px; height: 185px;" role="button">
+                                        <a href="https://dev.epicgames.com/community/unreal-engine/snippets" role="link" rel="noopener" target="_self" class="text-decoration-none">
+                                            <div class="card-body d-flex align-items-center flex-column flex-nowrap"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 24 24"><defs><linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#F09BAB"/><stop offset="50%" stop-color="#E166B5"/><stop offset="100%" stop-color="#F5A9A7"/></linearGradient></defs><path fill="url(#grad4)" d="M4 5V19H20V7H11.5858L9.58579 5H4ZM12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"/><path fill="url(#grad4)" d="M4 5V19H20V7H11.5858L9.58579 5H4ZM12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"/></svg>
+                                                <h6 class="text-white fs-6 mb-2 lh-sm my-4" style="font-weight: 600;">Snippets</h6>
+                                                <p class="fst-normal lh-base fw-normal" style="font-size: 14px; color: #B3B3B4; font-family: Inter Tight;">Chunks of code or script you <br> &nbsp;can use in your project.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="card learn-card rounded rounded-5" style="width: 287.59px; height: 185px;" role="button">
+                                        <a href="https://portal.productboard.com/epicgames/1-unreal-engine-public-roadmap/tabs/94-forward-looking" role="link" rel="noopener" target="_self"  class="text-decoration-none">
+                                            <div class="card-body d-flex align-items-center flex-column flex-nowrap"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 16 16"><defs><linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FCBB8A"/><stop offset="100%" stop-color="#FC7569"/></linearGradient></defs><path fill="url(#grad5)" d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path fill="url(#grad5)" d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
+                                                <h6 class="text-white fs-6 mb-2 lh-sm my-4" style="font-weight: 600;">Roadmap</h6>
+                                                <p class="fst-normal d-block text-truncate lh-base fw-normal" style="font-size: 14px; color: #B3B3B4; font-family: Inter Tight;">For a glimpse of what <br> features and updates are.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Forums container -->
+                            <div class="forums-container">
+                                <div class="forums-texts mb-lg-1 mb-2">
+                                    <div class="clearfix">
+                                        <div class="float-start">
+                                            <h4 class="text-white fw-bold" style="font-size: 18px; font-family: Inter Tight;">Forums (326 posts / week)</h4>
+                                        </div>
+                                        <div class="float-end">
+                                            <a href="https://forums.unrealengine.com/categories?tag=unreal-engine" class="news-btn text-white rounded-2 btn btn-sm mb-lg-3 mb-sm-2 mb-3" style="font-size: 12px; border: .5px solid #727881; font-weight: 400;" role="button" rel="noreferrer" rel="noopener" tabindex="0" target="_blank" title="Visit forums">Visit forums</a>
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/getting-started/150/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-bottom rounded-4 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Getting started &amp; setup</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i> &nbsp;
+                                                    <span>13.1K</span> 
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i> &nbsp;
+                                                    <span>49.8K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/48aoW/benedict1981" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                        <a href="https://forums.unrealengine.com/t/android-multi-view/2678773" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light">Android Multi-View 구성방법</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        1 day ago - <a href="https://dev.epicgames.com/community/profile/48aoW/benedict1981" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">benedict1981</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/programming-scripting/148/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-0 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Programming &amp; Scripting</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i> &nbsp;
+                                                    <span>199.3K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i> &nbsp;
+                                                    <span>848.8K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://forums.unrealengine.com/t/ue5-7-epic-launcher-problem/2679253" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                        <a href="https://forums.unrealengine.com/t/event-begin-overlap-branch-not-triggering-properly/2679327" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light ">Event Begin Overlap + Bra..</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        1 hour ago - <a href="https://dev.epicgames.com/community/profile/wvWQa/teko1987" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">teko1987</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/asset-creation/151/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-0 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Asset creation</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i> &nbsp;
+                                                    <span>23.3K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i> &nbsp;
+                                                    <span>99.5K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/GGV2O/Dennyzz11" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                        <a href="https://forums.unrealengine.com/t/mature-content-limit/2679242" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light">Mature content limit.............</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        6 hours ago - <a href="https://dev.epicgames.com/community/profile/GGV2O/Dennyzz11" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">Dennyzz11</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/character-animation/38/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-0 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Character &amp; animation</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i> &nbsp;
+                                                    <span>37.5K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i> &nbsp;
+                                                    <span>132.6K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/n6MK1/andreygheorghe" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                        <a href="https://forums.unrealengine.com/t/metahuman-assembly-crash/2679379" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light">Metahuman assembly cra...</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        1 hour ago - <a href="https://dev.epicgames.com/community/profile/n6MK1/andreygheorghe" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">andreygheorghe</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/world-creation/153/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-0 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">World creation</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i> &nbsp;
+                                                    <span>30.4K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i> &nbsp;
+                                                    <span>128.8K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/P38E/wilberolive" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                      <a href="https://forums.unrealengine.com/t/pcg-get-actor-data-destroys-everything-on-play/2679247" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light">PCG Get Actor Data Destr...</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        5 hours ago - <a href="https://dev.epicgames.com/community/profile/P38E/wilberolive" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">wilberolive</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/rendering/36/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-0 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Rendering</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i>&nbsp;
+                                                    <span>61.6K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i>&nbsp; 
+                                                    <span>248.3K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/4bKdG/frederick" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                      <a href="https://forums.unrealengine.com/t/how-to-fix-the-ghost-artifact/2679135" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light">How to fix the ghost artifa...</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        12 hours ago - <a href="https://dev.epicgames.com/community/profile/4bKdG/frederick" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">frederick</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/cinematics/44/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-0 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Cinematics &amp; media</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i>&nbsp;
+                                                    <span>11.3K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i>&nbsp; 
+                                                    <span>41.4K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/LbxD/Cool_P" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                       <a href="https://forums.unrealengine.com/t/switchboard-all-the-nodes-go-out-of-sync-what-is-the-problem/2679326" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light">Switchboard, all the node...</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        3 hours ago - <a href="https://dev.epicgames.com/community/profile/LbxD/Cool_P" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">Cool_P</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/platforms/130/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-0 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Platform & builds</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i>&nbsp; 
+                                                    <span>13.1K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i>&nbsp; 
+                                                    <span>49.8K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/zWYrL/Microsoft315" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                        <a href="https://forums.unrealengine.com/t/why-does-my-twinmotion-keep-crashing-how-do-i-fix-it/2679024" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light">Why does twinmotion kee...</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        1 day ago - <a href="https://dev.epicgames.com/community/profile/zWYrL/Microsoft315" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">Microsoft 315</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/audio/42/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-0 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Audio</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i>&nbsp; 
+                                                    <span>5.0K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i>&nbsp; 
+                                                    <span>20.8K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/jYYxK/bartoszpie" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                        <a href="https://forums.unrealengine.com/t/reverb-issues-in-5-4/2679042e" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-none"><span class="text-white fw-light">Reverb Issues in 5.4............</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        1 day ago - <a href="https://dev.epicgames.com/community/profile/jYYxK/bartoszpie" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" class="text-decoration-underline" style="color: #27BAFF;">bartoszpie</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                                <a href="https://forums.unrealengine.com/tags/c/development-discussion/pipeline-plugins/147/unreal-engine" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                    <div class="lists-group py-lg-2 py-md-3 py-sm-3 py-2 pe-lg-5 pe-md-3  px-md-4 px-5 rounded-top rounded-4 d-flex align-items-center justify-content-between gap-3 flex-grow-1 flex-shrink-0 mb-1"> <!-- Use d-flex from here -->
+                                        <div class="list-text flex-shrink-0">
+                                            <h6 class="text-white fw-bold lh-sm text-capitalize mb-0" style="font-size: 15px;">Pipeline &amp; plugins</h6>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-3 flex-shrink-0">
+                                            <!-- Stats -->
+                                            <div class="list-stats d-flex align-items-center gap-3" style="font-size: 15px;">
+                                                <div class="list-chat d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="bi bi-chat-dots text-white-50 fs-5"></i>&nbsp; 
+                                                    <span>13.7K</span>
+                                                </div>
+                                                <div class="list-share d-flex align-items-center gap-1 text-white fw-light">
+                                                    <i class="ri-share-forward-line text-white-50 fs-5"></i>&nbsp;
+                                                    <span>55.8K</span> &nbsp;&nbsp;
+                                                </div>
+                                            </div>
+                                            <!-- User info -->
+                                            <div class="list-user-info d-flex align-items-center gap-2">
+                                                <a href="https://dev.epicgames.com/community/profile/ZYM7e/spvnn" class="list-user text-white bg-dark rounded-circle text-decoration-none d-inline-flex align-items-center justify-content-center" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self">
+                                                    <i class="ri-user-3-line"></i>
+                                                </a> &nbsp;
+                                                <div class="list-text">
+                                                    <div class="text-white-50 small mb-0">
+                                                        <a href="https://forums.unrealengine.com/t/horde-doesnt-build-editor-pcbs-properly-when-not-modifying-project-c-e-g-only-modifying-plugin-c/2679189" class="text-decoration-none" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self"><span class="text-white fw-light">Horde doesn't build Edito...</span></a>
+                                                    </div>
+                                                    <div class="small" style="font-size: 12px; color: #B0B0B2;">
+                                                        8 hours ago - <a href="https://dev.epicgames.com/community/profile/ZYM7e/spvnn" class="text-decoration-underline" role="link" rel="noreferrer" rel="noopener" tabindex="0" target="_self" style="color: #27BAFF;">spvnn</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </a>
+                            </div>
+                        </div>
+                        <!-- The horizontal rule after the licensing section -->
+                        <hr class="container border-1 border-top mx-5pt-lg-4 pt-md-3 mt-lg-5 mt-md-5 d-none d-xxl-block d-xl-block d-lg-block d-md-block" style="color: #343437;">
+                    </div>
+                </section>
+
+                <!-- Licensing section -->
+               <section class="pt-5 licensing w-100" style="background: #101014; min-height: 125vh;">
+                <div class="container-md container-fluid p-4">
+                    <div class="licensing-container">
+                        <div class="licensing-texts">
+                            <h1 class="fw-bold text-white lh-base display-6 lead" style="font-family: Inter Tight;">Licensing</h1>
+                            <p class="fw-light fst-normal text-break lh-lg my-lg-4 my-md-3 mb-3" style="font-size: 16px; color: #B8B6B7;">We've streamlined our license terms to make choices clearer. Need something <br> designed just for you? Work with us to create a custom license. Visit our <span><a href="https://www.unrealengine.com/faq?lang=en-US" class="text-decoration-underline licensing-span-text"  title="FAQ" role="button" rel="noreferrer" rel="noopener" target="_self">FAQ</a></span> or reach <br> out to the community if you have any questions.</p>
+                        </div> <br>
+
+                        <div class="licensing-cta mb-lg-5 mb-md-4 mb-2">
+                            <div class="licensing-cta-text">
+                                <h4 class="text-white fw-bold lh-sm" style="font-size: 24px; font-family: Inter Tight;">Under $1 million USD in revenue&#63;</h4>
+                            </div>
+
+                            <div class="licensing-cta-box py-4 pe-5 mw-auto h-100 flex-fill rounded rounded-4 mt-4 d-flex align-items-start justify-content-between flex-row flex-wrap px-lg-4 px-md-3 px-sm-4 px-4 gap-2">
+                                <div class="licensing-cta-text1">
+                                    <h4 class="text-white fw-bold mb-4 ms-4" style="font-size: 25px; font-family: Inter Tight;">Free</h4>
+                                    <ul role="list">
+                                        <li class="list-styled mb-4">
+                                            <h4 class="fw-light lh-sm" style="color: #B8B6B7; font-size: 16px;"><span class="list-bold fw-bold fst-normal text-white">Game developers</span> (royalties apply after $1 million USD gross product revenue)</h4>
+                                        </li>
+                                        <li class="list-styled  mb-4">
+                                            <h4 class="fw-light lh-sm" style="color: #B8B6B7; font-size: 16px;"><span class="list-bold fw-bold fst-normal text-white">Individuals and small businesses</span> (with less than $1 million USD in annual gross <br> revenue)</h4>
+                                        </li>
+                                        <li class="list-styled">
+                                            <h4 class="fw-light lh-sm" style="color: #B8B6B7; font-size: 16px;"><span class="list-bold fw-bold fst-normal text-white">For education and schools</span> (no revenue limits)</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="licensing-cta-text2 flex-column ms-lg-3">
+                                    <div class="license-svg mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#26BCFF" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg> &nbsp;
+                                        <span class="align-middle fst-normal fw-light lh-1 fs-6">Access to the source code</span>
+                                    </div>
+                                    <div class="license-svg mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#26BCFF" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg> &nbsp;
+                                        <span class="align-middle fst-normal fw-light lh-1 fs-6">All platforms &amp; features</span>
+                                    </div>
+                                    <div class="license-svg mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#26BCFF" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg> &nbsp;
+                                        <span class="align-middle fst-normal fw-light lh-1 fs-6">Forums and documentation on the Epic Developer Community</span>
+                                    </div>
+                                    
+                                    <div class="learning-cta-text2-cta-buttons d-flex align-items-center justify-content-between flex-row flex-wrap gap-1">
+                                        <a href="https://www.unrealengine.com/en-US/download" class="d-inline-block learning-cta-btn text-decoration-none text-black rounded-3 btn btn-sm fw-normal" style="font-size: 14px;" title="Download now" role="button" rel="noreferrer" rel="noopener" target="_self">Download now</a>
+                                        <a href="https://www.unrealengine.com/en-US/faq" class="d-inline-block learning-cta-btn1 text-decoration-none rounded-3 btn btn-sm fw-normal" style="font-size: 14px;" title="View FAQ" role="button" rel="noreferrer" rel="noopener" target="_self">View FAQ</a>
+                                        <a href="https://www.unrealengine.com/en-US/license" class="d-inline-block learning-cta-btn2 text-decoration-none rounded-3 btn btn-sm fw-normal text-capitalize" style="font-size: 14px;" title="Licensing Terms" role="button" rel="noreferrer" rel="noopener" target="_self">licensing terms</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="licensing-flex mt-5">
+                            <div class="licensing-flex-text">
+                                <h4 class="text-white fw-bold lh-sm" style="font-size: 24px; font-family: Inter Tight;">Over $1 million USD in revenue&#63;</h4>
+                            </div>
+
+                            <div class="licensing-flex-container d-flex align-items-stretch justify-content-between gap-3 mb-lg-4 mb-md-4 mb-sm-3 mb-4"> <!-- Using the flex here -->
+                                <div class="licensing-flex-box1 pt-4 pb-3 pe-2 pe-sm-3 pe-lg-4 mw-auto h-auto flex-fill rounded rounded-5 mt-4 d-flex flex-column align-content-start">
+                                    <h4 class="text-white fw-bold mb-2 ms-4" style="font-size: 25px; font-family: Inter Tight;">Royalty-based</h4>
+                                    <p class="fw-light fst-normal lh-lg my-lg-4 my-md-3 my-2 ms-4 me-4" style="font-size: 16px; color: #B8B6B7;">If you're creating a game or application that relies on engine code at <br> runtime and will be licensed to the third party end users, you'll pay royalties <br> and <span class="license-bold fw-bold text-white">won't be required to purchase seats.</span></p>
+                                </div>
+
+                                <div class="licensing-flex-box2 pt-4 pb-3 pe-2 pe-sm-3 pe-lg-4 mw-auto h-auto flex-fill rounded rounded-5 mt-4">
+                                    <h4 class="text-white fw-bold mb-2 ms-4" style="font-size: 25px; font-family: Inter Tight;">Seat-based</h4>
+                                    <p class="fw-light fst-normal lh-lg my-lg-4 my-md-3 my-2 ms-4 me-4" style="font-size: 16px; color: #B8B6B7;">If you're using Unreal Engine for commercial purposes, have generated <br> more than <span class="license-bold fw-bold text-white">$1 million in the past 12 months,</span> and are not creating a game <br> or application that relies on engine code at runtime and will be licensed to <br> third party end users, <span class="license-bold fw-bold text-white">then a seat license fee is required.</span></p>
+                                </div>
+                            </div>
+                            
+                            <div> 
+                                <a href="https://www.unrealengine.com/en-US/license" class="licensing-readmore-container text-decoration-none d-flex align-items-center justify-content-center flex-row flex-nowrap flex-fill py-lg-4 py-md-3 py-4 rounded rounded-4" role="button">
+                                    <span class="read-more  align-middle text-white fw-light fst-normal lh-sm text-nowrap">
+                                        Read more
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-arrow-right-circle-fill fs-6 fw-bolder" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </section>
+            </main>
+
+               <!-- Footer section -->
+            <footer class="unreal-footer pt-5 w-100 pb-lg-5 pb-md-4 pb-sm-5 pb-2" style="background: #18181C; min-height: 95vh;">
+                <div class="container-fluid px-5">
+
+                    <div class="unreal-footer-container mt-lg-5 mt-md-3 mt-4 d-flex align-items-center justify-content-between">
+                        <!-- Progressive disclosure on the footer logos -->
+                        <div class="footer-logo">
+                            <img class="unreal-logo-icon d-none d-xxl-none d-xl-none d-lg-block d-md-block" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrq3wmn07o5xiqxc9fk" alt="Unreal Engine icon" width="35" height="35">
+                            <img class="unreal-footer-logo img-fluid mb-4 lh-1 d-none d-lg-none d-md-none d-xxl-block d-xl-block d-sm-block" role="img" src="https://cms-assets.unrealengine.com/AVzjeqAbLRKi3W5jq0CAvz/cmb81xhrx3tsh07mzz3amnbyl" alt="Unreal engine logo">
+                        </div>
+
+                        <div class="footer-icons-con">
+                            <ul class="footer-icons d-inline-flex align-items-center justify-content-center">
+                                <li>
+                                    <a href="https://twitter.com/unrealengine" class="text-decoration-none footer-icon ms-1 me-1" title="Twitter(X)" target="_blank" rel="noopener" rel="noreferrer" role="buttton">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/UnrealEngine" class="text-decoration-none footer-icon ms-1 me-1" title="FaceBook" target="_blank" rel="noopener" rel="noreferrer" role="buttton">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.twitch.tv/unrealengine" class="text-decoration-none footer-icon ms-1 me-1" title="Twitch" target="_blank" rel="noopener" rel="noreferrer" role="buttton">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30"  viewBox="0 0 24 24" fill="currentColor"><path d="M21.001 3V14.7391L16.3053 19.4348H12.3923L9.95523 21.7826H6.91402V19.4348H3.00098V6.13043L4.2281 3H21.001ZM19.4358 4.56522H6.13141V16.3043H9.26185V18.6522L11.6097 16.3043H16.3053L19.4358 13.1739V4.56522ZM16.3053 7.69565V12.3913H14.7401V7.69565H16.3053ZM12.3923 7.69565V12.3913H10.8271V7.69565H12.3923Z"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://instagram.com/UnrealEngine" class="text-decoration-none footer-icon ms-1 me-1" title="Instagram" target="_blank" rel="noopener" rel="noreferrer" role="buttton">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30"  viewBox="0 0 24 24" fill="currentColor"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.youtube.com/unrealengine" class="text-decoration-none footer-icon ms-1 me-1" title="YouTube" target="_blank" rel="noopener" rel="noreferrer" role="buttton">
+                                        <svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30"  viewBox="0 0 24 24" fill="currentColor"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.unrealengine.com/rss" class="text-decoration-none footer-icon ms-1 me-1" title="WiFi" target="_blank" rel="noopener" rel="noreferrer" role="buttton">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16"><path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/><path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="border-top mt-lg-4 mt-md-3 d-block" style="color: #343437;">
+
+                    <div class="footer-links d-flex align-content-start justify-content-between gap-2 flex-row flex-wrap"> <!-- Use flex here -->
+                        <!-- 1 -->
+                        <ul class="footer-list d-block mt-lg-5 mt-md-3 mt-2">
+                            <h4 class="text-white fw-bold mb-3" style="font-size: 21px;">Games</h4>
+                            <li class="mb-2 footer-link"><a href="https://www.fortnite.com/?lang=en-US" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Fortnite" target="_self" rel="noopener" rel="noreferrer" role="link">Fortnite</a></li>
+                            <li class="mb-2 footer-link"><a href="https://fallguys.com/?lang=en-US" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Fall Guys" target="_self" rel="noopener" rel="noreferrer" role="link">Fall guys</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.rocketleague.com/?lang=en-US" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Rocket League" target="_self" rel="noopener" rel="noreferrer" role="link">rocket league</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.epicgames.com/unrealtournament/?lang=en-US" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Unreal Tournament" target="_self" rel="noopener" rel="noreferrer" role="link">unreal tournament</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.epicgames.com/infinityblade/home/?lang=en-US" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Infinity Blade" target="_self" rel="noopener" rel="noreferrer" role="link">infinity blade</a></li>
+                            <li class="mb-2 footer-link"><a href="https://store.epicgames.com/p/shadow-complex/?lang=en-US" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Shadow Complex" target="_self" rel="noopener" rel="noreferrer" role="link">shadow complex</a></li>
+                            <li class="footer-link"><a href="https://www.epicgames.com/roborecall" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Robo Recall" target="_self" rel="noopener" rel="noreferrer" role="link">robo recall</a></li>
+                        </ul>
+
+                        <!-- 2 -->
+                        <ul class="footer-list align-content-start d-block mt-lg-5 mt-md-3 mt-3">
+                            <h4 class="text-white fw-bold mb-3" style="font-size: 21px;">Marketplaces</h4>
+                            <li class="mb-2 footer-link"><a href="https://store.epicgames.com/en-US/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Epic games store" target="_self" rel="noopener" rel="noreferrer" role="link">Epic games store</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.fab.com/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Fab" target="_self" rel="noopener" rel="noreferrer" role="link">fab</a></li>
+                            <li class="mb-2 footer-link"><a href="https://sketchfab.com/store" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Sketchfab" target="_self" rel="noopener" rel="noreferrer" role="link">Sketchfab</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.artstation.com/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="ArtStation" target="_self" rel="noopener" rel="noreferrer" role="link">ArtStation</a></li>
+                            <li class="mb-2 footer-link"><a href="https://legal.epicgames.com/en-US/store/refund-policy" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Store Refund Policy" target="_self" rel="noopener" rel="noreferrer" role="link">Store refund policy</a></li>
+                            <li class="footer-link"><a href="https://legal.epicgames.com/en-US/store/eula" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Store EULA" target="_self" rel="noopener" rel="noreferrer" role="link">Store EULA</a></li>                      
+                        </ul>
+
+                        <!-- 3 -->
+                        <ul class="footer-list align-content-start d-block mt-lg-5 mt-md-3 mt-3">
+                            <h4 class="text-white fw-bold mb-3" style="font-size: 21px;">Tools</h4>
+                            <li class="mb-2 footer-link"><a href="https://www.unrealengine.com/en-US/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Unreal Engine" target="_self" rel="noopener" rel="noreferrer" role="link">Unreal engine</a></li>
+                            <li class="mb-2 footer-link"><a href="https://store.epicgames.com/en-US/p/fortnite--uefn" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="UEFN" target="_self" rel="noopener" rel="noreferrer" role="link">UEFN</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.unrealengine.com/en-US/metahuman" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="MetaHuman" target="_self" rel="noopener" rel="noreferrer" role="link">MetaHuman</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.twinmotion.com/en-US/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Twinmotion" target="_self" rel="noopener" rel="noreferrer" role="link">Twinmotion</a></li>
+                            <li class="mb-2 footer-link"><a href="https://quixel.com/megascans/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Megascans" target="_self" rel="noopener" rel="noreferrer" role="link">Megascans</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.realityscan.com/en-US/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="RealityScan" target="_self" rel="noopener" rel="noreferrer" role="link">RealityScan</a></li>                      
+                            <li class="footer-link"><a href="http://www.radgametools.com/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="RAD Game Tools" target="_self" rel="noopener" rel="noreferrer" role="link">RAD game tools</a></li>                      
+                        </ul>
+
+                        <!-- 4 -->
+                        <ul class="footer-list align-content-start d-block mt-lg-5 mt-md-3 mt-3">
+                            <h4 class="text-white fw-bold mb-3" style="font-size: 21px;">Online Services</h4>
+                            <li class="mb-2 footer-link"><a href="https://onlineservices.epicgames.com/en-US/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Epic Online Services" target="_self" rel="noopener" rel="noreferrer" role="link">Epic online services</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.kidswebservices.com/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Kids Web Services" target="_self" rel="noopener" rel="noreferrer" role="link">Kids web services</a></li>
+                            <li class="mb-2 footer-link"><a href="https://onlineservices.epicgames.com/en-US/services/terms/agreements" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Services Agreement" target="_self" rel="noopener" rel="noreferrer" role="link">Services agreement</a></li>
+                            <li class="mb-2 footer-link"><a href="https://onlineservices.epicgames.com/en-US/services/terms/aup" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Acceptable Use Policy" target="_self" rel="noopener" rel="noreferrer" role="link">Acceptable use policy</a></li>
+                            <li class="mb-2 footer-link"><a href="https://onlineservices.epicgames.com/en-US/services/terms/trust-statement" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Trust Statement" target="_self" rel="noopener" rel="noreferrer" role="link">Trust statement</a></li>
+                            <li class="footer-link"><a href="https://onlineservices.epicgames.com/en-US/services/terms/subprocessors" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Subprocessor List" target="_self" rel="noopener" rel="noreferrer" role="link">Subprocessor list</a></li>                      
+                        </ul>
+
+                        <!-- 5 -->
+                        <ul class="footer-list align-content-start d-block mt-lg-5 mt-md-3 mt-3">
+                            <h4 class="text-white fw-bold mb-3" style="font-size: 21px;">Company</h4>
+                            <li class="mb-2 footer-link"><a href="https://www.epicgames.com/site/en-US/about" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="About" target="_self" rel="noopener" rel="noreferrer" role="link">About</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.epicgames.com/site/en-US/news" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Newsroom" target="_self" rel="noopener" rel="noreferrer" role="link">Newsroom</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.epicgames.com/site/en-US/careers/jobs" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Careers" target="_self" rel="noopener" rel="noreferrer" role="link">Careers</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.epicgames.com/site/en-US/earlycareers" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Students" target="_self" rel="noopener" rel="noreferrer" role="link">Students</a></li>
+                            <li class="footer-link"><a href="https://www.epicgames.com/site/en-US/ux" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="UX research" target="_self" rel="noopener" rel="noreferrer" role="link">UX research</a></li>          
+                        </ul>
+
+                        <!-- 6 -->
+                        <ul class="footer-list align-content-start d-block mt-lg-5 mt-md-3 mt-3">
+                            <h4 class="text-white fw-bold mb-3" style="font-size: 21px;">Resources</h4>
+                            <li class="mb-2 footer-link"><a href="https://dev.epicgames.com/community/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="DEV community" target="_self" rel="noopener" rel="noreferrer" role="link">DEV community</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.unrealengine.com/en-US/megagrants" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="MegaGrants" target="_self" rel="noopener" rel="noreferrer" role="link">MegaGrants</a></li>
+                            <li class="mb-2 footer-link"><a href="https://sac.epicgames.com/en-US/overview" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Support-A-Creator" target="_self" rel="noopener" rel="noreferrer" role="link">Support-a-creator</a></li>
+                            <li class="mb-2 footer-link"><a href="https://legal.epicgames.com/en-US/fortnite/eula/sac" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Creator Agreemen" target="_self" rel="noopener" rel="noreferrer" role="link">Creator agreement</a></li>
+                            <li class="mb-2 footer-link"><a href="https://store.epicgames.com/en-US/distribution" class="text-decoration-none fst-normal text-break text-wrap" style="font-size: 15px; font-weight: 300;" title="Distribute on Epic Games" target="_self" rel="noopener" rel="noreferrer" role="link">Distribute on Epic Games</a></li>
+                            <li class="mb-2 footer-link"><a href="https://www.unrealengine.com/en-US/branding" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Unreal Engine Branding Guidelines" target="_self" rel="noopener" rel="noreferrer" role="link">Unreal engine branding guidelines</a></li>                      
+                            <li class="mb-2 footer-link"><a href="https://legal.epicgames.com/en-US/epicgames/fan-art-policy" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Fan Art Policy" target="_self" rel="noopener" rel="noreferrer" role="link">Fan art policy</a></li>                      
+                            <li class="mb-2 footer-link"><a href="https://www.epicgames.com/site/en-US/community-rules" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Community Rules" target="_self" rel="noopener" rel="noreferrer" role="link">Community rules</a></li>                      
+                            <li class="mb-2 footer-link"><a href="https://www.epicgames.com/help/contact-us?source=external" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="EU Digital Services at Inquiries" target="_self" rel="noopener" rel="noreferrer" role="link">EU digital services at inquiries</a></li>                      
+                            <li class="footer-link"><a href="https://udn.unrealengine.com/" class="text-decoration-none fst-normal text-break text-wrap text-capitalize" style="font-size: 15px; font-weight: 300;" title="Epic Pro Support" target="_self" rel="noopener" rel="noreferrer" role="link">Epic pro support</a></li>                      
+                        </ul>
+                    </div>
+
+                    <hr class="border-top mt-lg-5 mt-md-3 mt-2 d-block mb-lg-4 mb-md-5 mb" style="color: #343437;">
+                    <div class="footer-copyright-container">
+                        <div class="footer-copyright d-flex align-items-center justify-content-between flex-row flex-wrap"> <!-- Using the flex here -->
+                            <div class="footer-cr-text">
+                                <h6 class="user-select-none fw-light lh-base" style="font-size: 12px; color: #B8B6B7;">&copy; 2025, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic's trademarks or registered trademarks in the US and elsewhere.</h6>
+                            </div>
+                            <div class="footer-cr-btn">
+                                <a href="#back-to-top" type="button" class="unreal_signin_btn text-decoration-none text-white btn btn-lg fw-light my-sm-3 my-3" tabindex="0" title="Back to top" aria-label="Back to top" aria-describedby="Click the button to go to first section of this website" style="font-size: 14px; padding: 12px 20px; letter-spacing: .5px; outline: none;">
+                                    <span>Back to top</span> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.1em" height="1.1em" fill="currentColor" class="bi bi-arrow-up-circle ms-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer-cr-links">
+                            <ul class="list-inline" role="list">
+                                <li class="list-inline-item footer-link fw-light fst-normal lh-sm"><a href="https://legal.epicgames.com/en-US/epicgames/tos" class="text-decoration-none" style="font-size: 12px;" role="link" tabindex="0" rel="noopener" rel="referrer" target="_self" title="Terms of service">Terms of service</a></li>
+                                <li class="list-inline-item footer-link fw-light fst-normal lh-sm "><a href="https://legal.epicgames.com/en-US/epicgames/privacy-policy" class="text-decoration-none" style="font-size: 12px;" role="link" tabindex="0" rel="noopener" rel="referrer" target="_self" title="Privacy policy">Privacy policy</a></li>
+                                <li class="list-inline-item footer-link fw-light fst-normal lh-sm"><a href="https://safety.epicgames.com/en-US" class="text-decoration-none" style="font-size: 12px;" role="link" tabindex="0" rel="noopener" rel="referrer" target="_self" title="Safety & security">Safety &amp; security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Clone section -->
+                    <div class="cloned-me align-middle p-1 p-sm-2">
+                        <p class="footer-link fw-light fst-normal lh-sm text-center user-select-none" style="font-size: 14px;">Cloned by
+                            <a href="https://x.com/codex_kev?t=q5W7KRurEvX0BA_PN3VW6Q&s=09" class="text-decoration-none d-inline-block" title="codex_kev" tabindex="0" rel="noopener" target="_blank"><span class="fw-bold user-select-all">@codex_kev</span></a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/path/to/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200,
+                once: true
+            });
+        </script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
